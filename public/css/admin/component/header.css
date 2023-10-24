@@ -1,0 +1,110 @@
+@import url(../../font.css);
+*{
+    transition: 0s;
+    padding: 0;
+    margin: 0;
+}
+nav ul{
+    width: max-content;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    height: max-content;
+}
+nav .logout{
+    bottom: 0;
+    margin-top: 200px;
+    width: 90%;
+    border-radius: 10px;
+    height: max-content;
+    background-color: #ff000037;
+    color: red;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav .logout .out{
+    display: grid;
+    padding: 10px 20px;
+    grid-template-columns: max-content auto;
+}
+nav .logout .out p{
+    font-family: poppins-reg;
+}
+nav .logout .out i{
+    margin-top: 5px;
+    text-align: center;
+}
+nav .menu{
+    width: 100%;
+    height: max-content;
+    padding: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+nav .menu:not(.active):hover{
+    background-color: rgb(244, 243, 243);
+}
+
+nav .menu .simbol{
+    width:30px;
+    height: 30px;
+    padding: 3px;
+    font-size: 20px;
+    text-align: center;
+}
+
+nav .sub-menu{
+    transition: 0.2s linear;
+    margin-left: 0px;
+    width:max-content;
+    background-color: #f2f2f2;
+    height: 0px;
+    border-radius: 7px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+nav .sub-menu p{
+    width:150px;
+    padding: 15px;
+    background-color: #f2f2f2;
+    display: block;
+}
+
+nav .sub-menu p:hover{
+    background-color: #c5c5c5;
+}
+
+nav .menu .simbol i{
+    text-align: center;
+    transform: translateY(5px);
+}
+
+nav .menu .simbol, nav .menu .text-simbol{
+    display: inline-block;
+}
+
+nav .menu .text-simbol{
+    opacity: 1;
+    padding-left: 0px;
+}
+
+nav .menu .text-simbol{
+    font-size: 14px;
+}
+
+.active{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+nav .title-admin{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: poppins-bold;
+}

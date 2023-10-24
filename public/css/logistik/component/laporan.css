@@ -1,0 +1,91 @@
+@import url(../../font.css);
+*{
+    font-family: poppins-reg;
+}
+.laporan-container{
+    width: 96%;
+    height: 95%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.laporan-container h3,
+.laporan-container .wrap-contain .tb-laporan h4{
+    font-family: poppins-bold;
+}
+.laporan-container .wrap-contain .tb-laporan h4{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.laporan-container .wrap-contain{
+    height: 93%;
+    width: 100%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.laporan-container .wrap-contain .tb-laporan{
+    width: 97%;
+    height: 100%;
+    margin-left: 50%;
+    overflow-y: auto;
+    transform: translateX(-50%);
+}
+
+.laporan-container .wrap-contain .tb-laporan table{
+    width: 100%;
+    font-size: 13px;
+}
+
+.laporan-container .wrap-contain .tb-laporan:first-child table tr td:last-child{
+    max-width: 50px;
+}
+.laporan-container .wrap-contain .tb-laporan table tr td:nth-child(4){
+    max-width: 100px;
+}
+.laporan-container .wrap-contain .tb-laporan table tr td:nth-child(3){
+    max-width: 100px;
+}
+.laporan-container .wrap-contain .tb-laporan table tr td:nth-child(2){
+    max-width: 20px;
+}
+.laporan-container .wrap-contain .tb-laporan table tr td{
+    padding: 10px 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.laporan-container .wrap-contain .tb-laporan table tr td:last-child button{
+    width: 30px;
+    margin-left: 50%;
+    height: 30px;
+    border-radius: 7px;
+    transform: translateX(-50%);
+    border: none;
+    background-color: #6478d93f;
+    transition: 0.2s linear;
+    color: #6478D9;
+}
+
+.laporan-container .wrap-contain .tb-laporan table tr td:last-child button:hover{
+    background-color: #6478D9;
+    color: white;
+}
+
+.laporan-container .cetaklaporan{
+    position: absolute;
+    padding: 10px 15px;
+    border-radius: 7px;
+    margin-top:10px;
+    background-color: #6478d93f;
+}
+.laporan-container .cetaklaporan select{
+    padding: 5px;
+}
+.laporan-container .cetaklaporan button{
+    padding: 5px;
+}

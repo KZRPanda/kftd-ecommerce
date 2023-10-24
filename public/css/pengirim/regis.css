@@ -1,0 +1,88 @@
+@import url(../font.css);
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width:600px){
+    .wrap{
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 85%;
+        padding-bottom: 25px;
+    }
+    
+    .wrap .logo{
+        width: 50%;
+        margin-top: 20px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        height: max-content;
+    }
+    
+    .wrap .logo img{
+        width: 100%;
+        height: max-content;
+        object-fit: contain;
+    }
+
+    .wrap h3{
+        font-size: 25px;
+        color: #203390;
+        font-family: poppins-bold;
+    }
+
+    .wrap .form{
+        margin-top: 40px;
+        width: 85%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        height: max-content;
+        border-radius: 10px;
+        padding: 20px;
+        background-color: #f2f2f2;
+    }
+    .wrap .form label{
+        margin-bottom: 10px;
+        font-family: poppins-reg;
+        display: block;
+    }
+    .wrap .form input{
+        display: block;
+        padding: 10px 0;
+        font-family: poppins-reg;
+        padding-right: 0;
+        margin-bottom: 0px;
+        padding-left: 10px;
+        width: 95%;
+    }
+    .wrap .form label:not(:first-child){
+        margin-top: 15px;
+    }
+    .wrap .form small{
+        padding:5px 10px;
+        border-radius: 3px;
+        display: block;
+        margin-top: 10px;
+        width: max-content;
+        background-color: #ff000037;
+        color: red;
+    }
+    .wrap .form .submit{
+        width: 100%;
+        padding: 0;
+        background-color: #6478d93f;
+        color: #203390;
+        border: none;
+        margin-top: 30px;
+        border-radius: 7px;
+        font-family: poppins-bold;
+        margin-bottom: 0;
+        height: 50px;
+    }
+
+    .wrap .form p{
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,83 @@
+@font-face {
+    font-family: pacifico;
+    src: url(fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins-reg;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: roboto-bold;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: roboto-reg;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: firasans-reg;
+    src: url(fonts/FiraSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: firasans-bold;
+    src: url(fonts/FiraSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: metro-bold;
+    src: url(fonts/Metropolis-Bold.otf);
+}
+
+@font-face {
+    font-family: metro-reg;
+    src: url(fonts/Metropolis-Regular.otf);
+}
+
+@font-face {
+    font-family: pattaya;
+    src: url(fonts/Pattaya-Regular.ttf);
+}
+
+@font-face {
+    font-family: twenty;
+    src: url(fonts/TwentyOne.ttf);
+}
+
+@font-face {
+    font-family: noto-reg;
+    src: url(fonts/NotoSans-Regular.ttf);
+}
+@font-face {
+    font-family: josefinsans-reg;
+    src: url(fonts/JosefinSans-Regular.ttf);
+}
+@font-face {
+    font-family: josefinsans-bold;
+    src: url(fonts/JosefinSans-Bold.ttf);
+}
+@font-face {
+    font-family: josefinsans-reg-i;
+    src: url(fonts/JosefinSans-Italic.ttf);
+}
+@font-face {
+    font-family: josefinsans-bold-i;
+    src: url(fonts/JosefinSans-BoldItalic.ttf);
+}
+@font-face {
+    font-family: notoserif-reg;
+    src: url(fonts/NotoSerif-Regular.ttf);
+}
+@font-face {
+    font-family: notoserif-bold;
+    src: url(fonts/NotoSerif-Bold.ttf);
+}

@@ -1,0 +1,37 @@
+@import url(../../../font.css);
+*{
+    font-family: poppins-reg;
+}
+.akunuser{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color:transparent;
+}
+
+.akunuser .container-akunuser{
+    width: 90%;
+    margin-left: 50%;
+    margin-top: 20px;
+    display: block;
+    padding: 20px;
+    height: 88%;
+    transform: translateX(-50%);
+    background-color: white;
+}
+
+.akunuser .container-akunuser table tr td{
+    padding: 5px 15px;
+    height: min-content;
+    font-size: 12px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #f2f2f2;
+}
+.akunuser .container-akunuser table tr:last-child td{
+    border: none;
+}
+.akunuser .container-akunuser table tr th{
+    padding: 10px 0;
+    font-size: 14px;
+    font-family: poppins-reg;
+}

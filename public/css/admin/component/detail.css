@@ -1,0 +1,44 @@
+.wrap-all .detail .isi-detail{
+    height: 580px;
+    width: 190px;
+    background-color: black;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    position: fixed;
+    border-radius: 30px;
+    padding: 20px;
+    color: white;
+    z-index: 1;
+}
+
+.detail .data{
+    display: block;
+    height: max-content;
+    width: 100%;
+}
+.detail h4{
+    margin-bottom: 20px;
+}
+
+.detail .data .card{
+    display: grid;
+    grid-template-areas: "left right";
+    grid-template-columns: 50px auto;
+    margin-bottom: 20px;
+}
+
+.detail .data .card i{
+    background-color: white;
+    color: black;
+    height: 18px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 100%;
+    width: 20px;
+}
+
+.detail .data .card .card-detail small{
+    opacity: 0.7;
+}

@@ -1,0 +1,776 @@
+@import url(font.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins-reg;
+    box-shadow: none;
+}
+body{
+    height: 100vh;
+    background-color: white;
+    width: 100%;
+}
+.wrap{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    min-width: 1000px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    height: 90vh;
+    width: 90%;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.142);
+    border: 3px solid #110a44;
+    display: grid;
+    grid-template-areas: 'kiri kanan';
+    grid-template-columns: 60% 40%;
+}
+.kiri .gambar{
+    width: 100%;
+    height: max-content;
+}
+.kiri .gambar img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.kiri h1{
+    margin-left: 50%;
+    margin-top: 30%;
+    width: max-content;
+    transform: translateX(-50%);
+    font-family: poppins-bold;
+    color: white;
+    font-size: 35px;
+}
+.kiri h3{
+    font-size: 15px;
+    font-family: poppins-reg;
+    color: white;
+}
+.kiri > .user1, .user2{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.kiri > .user1 img , .user2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.kanan{
+    overflow-x:hidden;
+    display: grid;
+    grid-template-areas: 'satu dua tiga';
+    grid-template-columns: 100% 100% 100%;
+}
+
+.kanan .satu,.kanan .dua,.kanan .tiga{
+    width: 100%;
+    height: max-content;
+    transition: 0.3s linear;
+    overflow: auto;
+    /* animation: geser 1s linear; */
+}
+
+.kanan .satu{
+    background-color: rgb(255, 255, 255);
+}
+.kanan .tiga{
+    background-color: rgb(255, 255, 255);
+    display: none;
+}
+
+.kanan .dua{
+    background-color: rgb(255, 255, 255);
+    display: none;
+}
+
+.kanan .wrap-sign{
+    width: 70%;
+    padding-bottom: 20px;
+    overflow: hidden;
+    height: max-content;
+    margin: auto 50%;
+    transform: translatex(-50%);
+    background-color: white;
+}
+
+.kanan .wrap-sign .logo{
+    height: 100px;
+    width: max-content;
+    margin-left: 50%;
+    margin-bottom: -20px;
+    transform: translateX(-50%);
+}
+.kanan .wrap-sign  h1{
+    margin-top: -5px;
+    font-size: 20px;
+    display: none;
+    margin-bottom: 5px;
+}
+.kanan .wrap-sign label{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.kanan .wrap-sign input{
+    width: 100%;
+    margin-top: 5px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box; 
+    padding: 15px;
+    padding-right: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: poppins-reg;
+    outline: none;
+    border: 1px solid rgb(191, 191, 191);
+}
+.kanan .wrap-sign input:focus{
+    border-color: rgb(17, 10, 68);
+}
+.kanan .wrap-sign i{
+    position: absolute;
+    margin-top: -55px;
+    margin-right: 30px;
+    right: 0;
+}
+.kanan .wrap-sign .logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.kanan .wrap-sign .wrap-step{
+    width: 100%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box; 
+    padding: 15px;
+    border: 1px solid rgb(191, 191, 191);
+}
+
+.kanan .wrap-sign .step{
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.kanan .wrap-sign .step .bulat{
+    height: 50px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100%;
+    width: 50px;
+    background-color: rgb(214, 214, 214);
+}
+
+.kanan .wrap-sign .step .bulat span{
+    margin: 17px 50%;
+    color: white;
+    transform: translateX(-50%);
+    
+}
+
+.kanan .wrap-sign .step .bulat:first-child{
+    background-color: red;
+}
+
+.kanan .wrap-sign .step .garis{
+    width: 90%;
+    border-radius: 9px;
+    height: 2px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(214, 214, 214);
+    margin-top: 23px;
+}
+
+
+
+.kanan .wrap-sign .next{
+    width: 100%;
+    margin-top: 10px;
+    padding: 0px;
+    height: 50px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box; 
+    font-family: poppins-bold;
+    color: rgb(17, 10, 68);
+    font-size: 15px;
+    border: 2px solid rgb(17, 10, 68);
+    background-color: rgb(255, 255, 255);
+}
+.kanan .wrap-sign > .cek-usr, .cek-pass, .cek-eml{
+    width: max-content;
+    padding: 10px 20px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    display: none;
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, 0.108);
+    color: red;
+}
+
+
+.kanan .wrap-sign .xy{
+    background-color: #110a44;
+    height: 50px;
+    width: 90%;
+    z-index: -1;
+    position: absolute;
+    margin: -60px 50%;
+    transform: translateX(-50%);
+    
+}
+.kanan .wrap-sign #usr{
+    display: none;
+}
+
+
+@keyframes geser {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotateY(180deg);
+    }
+}
+
+/*
+    kanan dua
+*/
+
+.kanan .wrap-sign .step-dua{
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.kanan .wrap-sign .step-dua .bulat{
+    height: 50px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100%;
+    width: 50px;
+    background-color: rgb(214, 214, 214);
+}
+
+.kanan .wrap-sign .step-dua .bulat span{
+    margin: 17px 50%;
+    color: white;
+    transform: translateX(-50%);
+    
+}
+
+.kanan .wrap-sign .step-dua .bulat:first-child{
+    background-color: #110a44;
+}
+.kanan .wrap-sign .step-dua .bulat:nth-child(3){
+    background-color: red;
+}
+
+.kanan .wrap-sign .step-dua .garis{
+    width: 90%;
+    border-radius: 9px;
+    height: 2px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(214, 214, 214);
+    margin-top: 23px;
+}
+
+#eml{
+    display: none;
+}
+
+/*
+    kanan tiga
+*/
+
+.kanan .wrap-sign .step-tiga{
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.kanan .wrap-sign .step-tiga .bulat{
+    height: 50px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100%;
+    width: 50px;
+    background-color: rgb(214, 214, 214);
+}
+
+.kanan .wrap-sign .step-tiga .bulat span{
+    margin: 17px 50%;
+    color: white;
+    transform: translateX(-50%);
+    
+}
+
+.kanan .wrap-sign .step-tiga .bulat:first-child{
+    background-color: #110a44;
+}
+.kanan .wrap-sign .step-tiga .bulat:nth-child(3){
+    background-color: #110a44;
+}
+.kanan .wrap-sign .step-tiga .bulat:nth-child(5){
+    background-color: red;
+}
+
+.kanan .wrap-sign .step-tiga .garis{
+    width: 90%;
+    border-radius: 9px;
+    height: 2px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(214, 214, 214);
+    margin-top: 23px;
+}
+
+select{
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    font-family: poppins-reg;
+}
+
+.foto-preview{
+    width: 100%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box; 
+    height: max-content;
+    padding: 20px 0px;
+    border: 2px solid #110a44;
+    margin-bottom: 20px;
+}
+.foto-preview img{
+    height: max-content;
+    max-height: 300px;
+    width: 90%;
+    object-fit: contain;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+select option{
+    font-family: poppins-bold;
+}
+
+
+
+@media only screen and (max-width : 450px){
+    body{
+        height: 100%;
+        background-color: white;
+        width: 100%;
+    }
+    .wrap{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom:0;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        overflow-x: hidden;
+        overflow-y: auto;
+        min-width: 0px;
+        height: 100%;
+        width: 100%;
+        padding-bottom: 0px;
+        box-shadow:none;
+        border: none;
+        background-color: rgb(235, 237, 243);
+        display: block;
+    }
+    .kiri{
+        position: fixed;
+        display: none;
+        grid-area: "atas";
+        height: 100%;
+        z-index: 1;
+        width: max-content;
+        background-size: contain;
+        background-position: center;
+        background-image: none !important;
+        background-color: rgb(132, 12, 12);
+    }
+    .kiri .gambar{
+        width: 100%;
+        height: max-content;
+    }
+    .kiri .gambar img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    .kiri h1{
+        margin-left: 50%;
+        margin-top: 0%;
+        width: max-content;
+        transform: translateX(-50%);
+        font-family: poppins-bold;
+        color: white;
+        font-size: 35px;
+    }
+    .kiri h3{
+        font-size: 15px;
+        font-family: poppins-reg;
+        color: white;
+    }
+    .kiri > .user1, .user2{
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        overflow: hidden;
+    }
+    
+    .kiri > .user1 img , .user2 img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .kanan{
+        grid-area: bawah;
+        position: absolute;
+        width: 90%;
+        z-index: 2;
+        margin-left: 50%;
+        margin-top: 50px;
+        height: max-content;
+        background-color: rgb(255, 255, 255);
+        transform: translateX(-50%);
+        overflow-x: hidden;
+        overflow-y: auto;
+        display: grid;
+        grid-template-areas: 'satu dua tiga';
+        grid-template-columns: 100% 100% 100%;
+    }
+    
+    .kanan .satu,.kanan .dua,.kanan .tiga{
+        width: 98%;
+        height: max-content;
+        transition: 0.3s linear;
+        border: 3px solid #110a44;
+        overflow-y: auto;
+        overflow-x: hidden;
+        /* animation: geser 1s linear; */
+    }
+    
+    .kanan .satu{
+        background-color: rgb(255, 255, 255);
+    }
+    .kanan .tiga{
+        background-color: rgb(255, 255, 255);
+        display:none;
+    }
+    
+    .kanan .dua{
+        background-color: rgb(255, 255, 255);
+        display: none;
+    }
+    
+    .kanan .wrap-sign{
+        width: 80%;
+        padding-bottom: 20px;
+        height: max-content;
+        /* margin: auto 50%;
+        transform: translatex(-50%); */
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .kanan .wrap-sign .logo{
+        height: 100px;
+        width: max-content;
+        margin-left: 50%;
+        margin-bottom: -20px;
+        transform: translateX(-50%);
+    }
+    .kanan .wrap-sign  h1{
+        margin-top: -5px;
+        font-size: 20px;
+        display: none;
+        margin-bottom: 5px;
+    }
+    .kanan .wrap-sign label{
+        color: rgb(0, 0, 0);
+        font-family: poppins-bold;
+        font-weight: normal;
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    .kanan .wrap-sign input{
+        width: 100%;
+        margin-top: 5px;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box; 
+        padding: 15px;
+        padding-right: 0;
+        margin-bottom: 20px;
+        font-size: 11px;
+        font-family: poppins-reg;
+        outline: none;
+        border: 1px solid rgb(191, 191, 191);
+    }
+    .kanan .wrap-sign input:focus{
+        border-color: rgb(17, 10, 68);
+    }
+    .kanan .wrap-sign i{
+        position: absolute;
+        margin-top: -55px;
+        margin-right: 30px;
+        right: 0;
+    }
+    .kanan .wrap-sign .logo img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    
+    .kanan .wrap-sign .wrap-step{
+        width: 100%;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box; 
+        padding: 15px;
+        border: 1px solid rgb(191, 191, 191);
+    }
+    
+    .kanan .wrap-sign .step{
+        width: 80%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+    
+    .kanan .wrap-sign .step .bulat{
+        height: 40px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        border-radius: 100%;
+        width: 40px;
+        background-color: rgb(214, 214, 214);
+    }
+    
+    .kanan .wrap-sign .step .bulat span{
+        margin: 13px 50%;
+        color: white;
+        transform: translateX(-50%);
+        
+    }
+    
+    .kanan .wrap-sign .step .bulat:first-child{
+        background-color: red;
+    }
+    
+    .kanan .wrap-sign .step .garis{
+        width:70%;
+        border-radius: 9px;
+        height: 2px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        background-color: rgb(214, 214, 214);
+        margin-top: 19px;
+    }
+    
+    
+    
+    .kanan .wrap-sign .next{
+        width: 100%;
+        margin-top: 10px;
+        padding: 0px;
+        height: 50px;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box; 
+        font-family: poppins-bold;
+        color: rgb(17, 10, 68);
+        font-size: 15px;
+        border: 2px solid rgb(17, 10, 68);
+        background-color: rgb(255, 255, 255);
+    }
+    .kanan .wrap-sign > .cek-usr, .cek-pass, .cek-eml{
+        width: max-content;
+        padding: 10px 20px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        display: none;
+        border-radius: 10px;
+        background-color: rgba(255, 0, 0, 0.108);
+        color: red;
+    }
+    
+    
+    .kanan .wrap-sign .xy{
+        background-color: #110a44;
+        height: 50px;
+        width: 90%;
+        z-index: -1;
+        position: absolute;
+        margin: -60px 50%;
+        transform: translateX(-50%);
+        
+    }
+    .kanan .wrap-sign #usr{
+        display: none;
+    }
+    
+    
+    @keyframes geser {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotateY(180deg);
+        }
+    }
+    
+    /*
+        kanan dua
+    */
+    
+    .kanan .wrap-sign .step-dua{
+        width: 80%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+    
+    .kanan .wrap-sign .step-dua .bulat{
+        height: 40px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        border-radius: 100%;
+        width: 40px;
+        background-color: rgb(214, 214, 214);
+    }
+    
+    .kanan .wrap-sign .step-dua .bulat span{
+        margin: 13px 50%;
+        color: white;
+        transform: translateX(-50%);
+        
+    }
+    
+    .kanan .wrap-sign .step-dua .bulat:first-child{
+        background-color: #110a44;
+    }
+    .kanan .wrap-sign .step-dua .bulat:nth-child(3){
+        background-color: red;
+    }
+    
+    .kanan .wrap-sign .step-dua .garis{
+        width:70%;
+        border-radius: 9px;
+        height: 2px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        background-color: rgb(214, 214, 214);
+        margin-top: 19px;
+    }
+    
+    #eml{
+        display: none;
+    }
+    
+    /*
+        kanan tiga
+    */
+    
+    .kanan .wrap-sign .step-tiga{
+        width: 80%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+    
+    .kanan .wrap-sign .step-tiga .bulat{
+        height: 40px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        border-radius: 100%;
+        width: 40px;
+        background-color: rgb(214, 214, 214);
+    }
+    
+    .kanan .wrap-sign .step-tiga .bulat span{
+        margin: 13px 50%;
+        color: white;
+        transform: translateX(-50%);
+        
+    }
+    
+    .kanan .wrap-sign .step-tiga .bulat:first-child{
+        background-color: #110a44;
+    }
+    .kanan .wrap-sign .step-tiga .bulat:nth-child(3){
+        background-color: #110a44;
+    }
+    .kanan .wrap-sign .step-tiga .bulat:nth-child(5){
+        background-color: red;
+    }
+    
+    .kanan .wrap-sign .step-tiga .garis{
+        width:70%;
+        border-radius: 9px;
+        height: 2px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        background-color: rgb(214, 214, 214);
+        margin-top: 19px;
+    }
+    
+    select{
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        padding: 10px 10px;
+        font-family: poppins-reg;
+    }
+    
+    .foto-preview{
+        width: 100%;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box; 
+        height: max-content;
+        padding: 20px 0px;
+        border: 2px solid #110a44;
+        margin-bottom: 20px;
+    }
+    .foto-preview img{
+        height: max-content;
+        max-height: 300px;
+        width: 90%;
+        object-fit: contain;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    select option{
+        font-family: poppins-bold;
+    }
+}

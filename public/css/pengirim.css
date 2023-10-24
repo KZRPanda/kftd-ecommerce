@@ -1,0 +1,106 @@
+@import url(font.css);
+
+*{
+    font-family: poppins-reg;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width:600px){
+    .wrap{
+        width: 100%;
+    }
+    .wrap .header{
+        width: 100%;
+        padding: 25px 0;
+        font-size: 30px !important;
+    }
+    .wrap .header .prof{
+        position: fixed;
+        right: 0;
+        margin: -30px 20px;
+        height: 40px;
+        overflow: hidden;
+        border-radius: 100%;
+        border: 1px solid #f2f2f2;
+        width: 40px;
+        z-index: 10;
+    }
+    .wrap .header .prof img{
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+    }
+    .wrap .header h3{
+        font-size: 13px;
+        font-family: poppins-bold;
+        text-align: center;
+    }
+    table{
+        margin-top: 0px;
+        width: 90%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    table tr{
+        width: 10px;
+        overflow: hidden;
+        font-size: 10px;
+    }
+    table tr td p{
+        height: 23px;
+        overflow-y: hidden;
+        padding: 10px 10px;
+        text-align: justify;
+    }
+
+    .setpoin{
+        z-index: 1;
+        padding: 10px;
+        margin-left: 5px;
+        display: grid;
+        margin-bottom: 10px;
+        background-color: #95a7ff3f;
+        width:25px;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: 0.2s;
+        grid-template-columns: max-content max-content;
+    }
+    .setpoin:hover{
+        width: 135px;
+    }
+    .setpoin .ic{
+        height: 25px;
+        width: 25px;
+        background-color: #6478d93f;
+        border-radius: 7px;
+        color: #3c57dd;
+    }
+    .setpoin p{
+        font-family: poppins-bold;
+        margin-top: 2px;
+        margin-left: 10px;
+        color: #6478D9;
+        font-size: 12px;
+    }
+    .setpoin .ic i{
+        margin: 50% 50%;
+        font-size: 15px;
+        transform: translate(-50%,-50%);
+    }
+    .greet{
+        font-size: 12px;
+        font-family: poppins-bold;
+        color: rgb(0, 0, 0);
+        margin-bottom: 15px;
+        margin-left: 5px;
+    }
+
+    table tr:hover td p{
+        height: max-content;
+    }
+}

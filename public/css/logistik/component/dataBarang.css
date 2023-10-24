@@ -1,0 +1,277 @@
+*{
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+*::-webkit-scrollbar-button{
+    display: none;
+}
+.dataBarang {
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+}
+.button{
+    width: 150px;
+    height: 300px;
+    background-color: #f5f5f5;
+    border: 1px solid #203390;
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    z-index: 2;
+
+}
+.dataBarang .dataBarangActions{
+    position: fixed;
+    height:20px;
+    padding: 20px;
+    width:60%;
+    background-color: rgb(255, 6, 6);
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: 0.2s;
+    z-index: 1;
+    border-radius: 5px;
+}
+.dataBarang .dataBarang-contain h3{
+    font-family: poppins-bold;
+}
+.dataBarang .dataBarang-contain .action-page{
+    float: right;
+}
+
+.dataBarang .dataBarangActions button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 0px;
+    text-align: left;
+    margin-bottom: 10px;
+    border: 2px solid #203390;
+    background-color: #203390;
+    color: white;
+    transition: 0s;
+    border-radius: 5px;
+}
+.dataBarang .dataBarangActions button:hover{
+    background-color: white;
+    color: #203390;
+}
+.dataBarang .dataBarangActions p{
+    color: black;
+    margin-bottom: 5px;
+}
+.dataBarang .dataBarangActions button i{
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0s;
+}
+
+.dataBarang .dataBarang-contain{
+    width: 98%;
+    margin-top: 0px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    height: 87vh;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+.dataBarang .dataBarang-contain #tb_dataBarang{
+    height: 85%;
+    overflow-y: scroll;
+    margin-top: 20px;
+}
+
+.dataBarang .dataBarang-contain table{
+    width: 100%;
+    margin-top: 0px;
+}
+
+.dataBarang .dataBarang-contain table tr td{
+    padding: 10px;
+    transition: 0s;
+}
+.dataBarang .dataBarang-contain table tr{
+    transition: 0s;
+}
+
+.dataBarang .dataBarang-contain table tr:hover{
+    background-color: #f5f5f5;
+}
+.dataBarang .dataBarang-contain .btn-tambah{
+    width: 40px;
+    height: 40px;
+    background-color: #203390;
+    color: white;
+    border-radius: 10px;
+    transition: 0.1s;
+    font-family: poppins-bold;
+    cursor: pointer;
+    border: 2px solid transparent;
+    box-shadow: 0px 7px 15px rgba(0, 0, 255, 0.212);   
+}
+.dataBarang .dataBarang-contain .action-page button{
+    width: 130px;
+    height: 40px;
+    background-color: #203390;
+    color: white;
+    border-radius: 10px;
+    transition: 0.1s;
+    font-family: poppins-bold;
+    margin-left: 20px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    box-shadow: 0px 7px 15px rgba(0, 0, 255, 0.212);   
+}
+
+.dataBarang .dataBarang-contain button i{
+    transition: 0.1s;
+}
+
+.dataBarang .dataBarang-contain button:hover{
+    background-color: white;
+    color: #203390;
+    border: 2px solid #203390;
+}
+
+.dataBarang .dataBarang-contain .cat-page{
+    width: 130px;
+    height: 40px;
+    background-color: #203390;
+    color: white;
+    border-radius: 10px;
+    transition: 0.1s;
+    font-family: poppins-bold;
+    cursor: pointer;
+    border: 2px solid transparent;
+    box-shadow: 0px 7px 15px rgba(0, 0, 255, 0.212);   
+}
+
+.dataBarang .dataBarang-contain .pencarian{
+    display: inline-table;
+    margin-left: 10px;
+}
+.dataBarang .dataBarang-contain .pencarian i{
+    position: absolute;
+    background-color: #203390;
+    color: white;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 5px;
+    transform: translate(4px,5px);
+}
+.dataBarang .dataBarang-contain .pencarian .cari{
+    padding-left: 45px;
+    width: 130px;
+}
+.dataBarang .dataBarang-contain .pencarian .info{
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(236, 238, 255);
+    margin-top: 50px;
+    display: none;
+    grid-template-columns: max-content auto;
+    padding: 10px 15px;
+    margin-left: 15px;
+    color: #203390;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.134);
+    border-radius:0px 10px 10px 10px;
+}
+.dataBarang .dataBarang-contain .pencarian .info span{
+    margin-left: 20px;
+    height: max-content;
+    align-items:center;
+    justify-content:center;
+    font-size: 13px;
+    padding: 5px 4px;
+    border-radius: 100%;
+    width: 15px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.271);
+    transform: translateY(-2px);
+}
+.dataBarang .limit{
+    width: 50px;
+    text-align: center;
+    float: right;
+    margin-left: 20px;
+}
+.dataBarang .dataBarang-contain .pencarian .cari,.dataBarang .limit{
+    height: 40px;
+    background-color: #f5f5f5;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+}
+
+.dataBarang .dataBarang-contain .pencarian .cari:focus{
+    width: 300px;
+}
+
+.dataBarang .dataBarang-container{
+    position: fixed;
+    z-index: 2;
+    background-color: white;
+    width: min-content;
+    padding: 20px;
+    height: max-content;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.107);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#dataTambah,#dataEdit{
+    display: none;
+}
+
+.dataBarang .dataBarang-container h3{
+    font-size: 15px;
+}
+
+.dataBarang .dataBarang-container .contain-tambah label{
+    display: block;
+    font-size: 13px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family: poppins-bold;
+}
+
+.dataBarang .dataBarang-container .contain-tambah button{
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+}
+.btn-data{
+    background-color: black;
+    color: white;
+}
+
+.btl-data{
+    background-color:white;
+    color: black;
+}
+
+.dataBarang .dataBarang-container .contain-tambah input{
+    padding: 9px 10px;
+    outline: none;
+    width:300px;
+    background-color: #f5f5f5;
+    border: none;
+}

@@ -1,0 +1,30 @@
+.dataTransaksi{
+    width: 100%;
+    height: 100%;
+}
+.dataTransaksi h3{
+    font-family: poppins-bold;
+}
+.dataTransaksi .container-transaksi{
+    width: 94%;
+    height: 93%;
+    padding: 20px 30px;
+}
+
+.dataTransaksi .container-transaksi .tb{
+    width: 100%;
+    height: 93%;
+    margin-top: 20px;
+    overflow: auto;
+}
+
+.dataTransaksi .container-transaksi .tb table{
+    width: 100%;
+    font-size: 13px;
+}
+.dataTransaksi .container-transaksi .tb table tr th{
+    font-family: poppins-bold;
+}
+.dataTransaksi .container-transaksi .tb table tr td{
+    padding: 5px 15px;
+}

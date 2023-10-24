@@ -1,0 +1,97 @@
+.suratKeterangan{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.suratKeterangan .card-surat{
+    width: 92%;
+    height: max-content;
+    display: grid;
+    padding: 10px 0px 10px 20px;
+    margin-bottom: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    grid-template-columns:10% 35% 10% 15% 20% 5%;
+    background-color: #203390;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.suratKeterangan .btn-all{
+    width: 94.5%;
+    display: grid;
+    margin-top: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    grid-template-columns: max-content max-content;
+}
+
+.suratKeterangan .btn-all button{
+    width: 120px;
+    height: max-content;
+    text-align: left;
+    padding: 5px 10px;
+    margin-top: 0px;
+    margin-right: 10px;
+}
+
+.suratKeterangan .btn-all button i{
+    float: right;
+    transform: translateY(3px);
+}
+
+/* .suratKeterangan .card-surat:hover{
+    grid-template-columns: 5% 40% 10% 15% 20% 5%;
+} */
+
+.suratKeterangan .card-surat input{
+    display: none;
+    margin-top: 7px;
+}
+
+.suratKeterangan .card-penjelasan{
+    width: 90%;
+    margin-left: 50%;
+    margin-top: 10px;
+    transform: translateX(-50%);
+    height: max-content;
+    border-radius: 5px;
+    transition: 0.3s;
+    padding: 10px 20px;
+    overflow: hidden;
+    background-color: #6478d93f;
+    color: #6478D9;
+}
+.suratKeterangan .card-surat .lihat{
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    position: absolute;
+    height: 39px;
+    width: 39px;
+    border-radius: 0px 5px 5px 0px;
+    right: 0;
+    margin-right: auto;
+}
+
+.suratKeterangan .card-surat .lihat i{
+    margin: 50% 50%;
+    font-size: 20px;
+    transform: translate(-50%,-50%);
+}
+.suratKeterangan .card-penjelasan i{
+    float: right;
+}
+.suratKeterangan .card-penjelasan p{
+    margin-top: 0px;
+    text-align: justify;
+}
+.suratKeterangan .card-surat p{
+    width: 100%;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

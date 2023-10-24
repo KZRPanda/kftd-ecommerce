@@ -1,0 +1,64 @@
+.data-faktur{
+    width: 100%;
+    height: 100%;
+}
+.data-faktur h3{
+    font-family: poppins-bold;
+}
+.data-faktur .container-transaksi{
+    width: 94%;
+    height: 93%;
+    padding: 20px 30px;
+}
+
+.data-faktur .container-transaksi .tb{
+    width: 100%;
+    height: 82%;
+    margin-top: 20px;
+    overflow: auto;
+}
+
+.data-faktur .container-transaksi .tb table{
+    width: 100%;
+    font-size: 13px;
+}
+.data-faktur .container-transaksi .tb table tr th{
+    font-family: poppins-bold;
+}
+.data-faktur .container-transaksi .tb table tr td{
+    padding: 5px 15px;
+}
+
+.data-faktur .container-transaksi .tb table tr td .ic{
+    height: 30px;
+    width: 30px;
+    margin: 0% 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+.data-faktur .container-transaksi .tb table tr td .ic:hover{
+    background-color: black;
+    color: white;
+}
+.data-faktur .container-transaksi .tb table tr td .ic i{
+    margin: 50% 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.data-faktur .container-transaksi .cari{
+    width: max-content;
+    margin-top: 20px;
+}
+
+.data-faktur .container-transaksi .cari input{
+    padding: 7px 15px;
+    width: 300px;
+    background-color: #f2f2f2;
+    border: none;
+}
+.data-faktur .container-transaksi .cari button{
+    padding: 5px 15px;
+}
+

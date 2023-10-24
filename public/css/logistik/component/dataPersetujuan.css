@@ -1,0 +1,392 @@
+@import url(../../../font.css);
+.dataPersetujuan{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color:rgb(255, 255, 255);
+}
+.dataPersetujuan .tolak-pesanan{
+    height: max-content;
+    width: min-content;
+    padding: 20px;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.089);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+}
+.dataPersetujuan .tolak-pesanan textarea{
+    padding: 8px;
+    margin-top: 15px;
+}
+
+.dataPersetujuan .tolak-pesanan button{
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px 0;
+    color: red;
+    border-radius: 7px;
+    border: none;
+    background-color: #ff000037;
+}
+.dataPersetujuan .tolak-pesanan section{
+    width: 100%;
+    height: min-content;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-gap: 5px;
+}
+.dataPersetujuan .tolak-pesanan section .pilih{
+    width:max-content;
+    display: grid;
+    height: min-content;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin: 10px 0;
+    color: black;
+    padding: 10px;
+    grid-template-columns: max-content max-content;
+}
+.dataPersetujuan .tolak-pesanan section .pilih i{
+    transform: translateY(3px);
+    padding-right: 10px;
+}
+.dataPersetujuan .container_dataPersetujuan #table{
+    width: 100%;
+    gap: 0;
+}
+
+.dataPersetujuan .container_dataPersetujuan #tb_dataSetuju{
+    height: 86%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 20px;
+}
+
+.dataPersetujuan .container_dataPersetujuan #table tr:hover{
+    background-color: #f5f5f5;
+    transition: 0s;
+}
+
+.dataPersetujuan .container_dataPersetujuan{
+    width: 100%;
+    margin-left: 50%;
+    margin-top: 0px;
+    display: block;
+    padding: 20px;
+    height: 95%;
+    transform: translateX(-50%);
+    background-color: white;
+}
+.setujui-pesanan{
+    z-index: 3;
+    width: 300px;
+    display: none;
+    height: max-content;
+    padding: 20px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.089);
+    margin: auto;
+}
+.setujui-pesanan i{
+    font-size: 25px;
+    float: right;
+    color: rgb(255, 109, 109);
+}
+.setujui-pesanan .tb-setujui{
+    width: 100%;
+}
+.setujui-pesanan .tb-setujui tr td:nth-child(2){
+    text-align: center;
+}
+
+.setujui-pesanan .tb-setujui tr td{
+    padding: 5px 0px;
+}
+.setujui-pesanan .tb-setujui tr td:first-child{
+    font-family: poppins-bold;
+}
+.setujui-pesanan .tb-setujui tr:nth-child(5) td button{
+    background-color: #ff000037;
+    color: red;
+}
+.setujui-pesanan .tb-setujui tr:nth-child(4) td button{
+    background-color: #6478d93f;
+    color: #6478D9;
+}
+.setujui-pesanan .tb-setujui tr td button{
+    width: 100%;
+    border-radius: 7px;
+    padding: 7px 0;
+    border: none;
+}
+
+.setujui-pesanan .tb-setujui .tb-dataAll{
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.setujui-pesanan .tb-setujui .tb-dataAll table{
+    width: 100%;
+}
+.setujui-pesanan .tb-setujui .tb-dataAll table tr:first-child td{
+    font-family: poppins-bold;
+    text-align: center;
+}
+.setujui-pesanan .tb-setujui .tb-dataAll table tr td:last-child{
+    text-align: center;
+}
+
+.setujui-pesanan .tb-setujui .tb-dataAll table tr td{
+    font-family: poppins-reg;
+    padding: 7px 3px;
+    font-size: 12px;
+    text-align: left;
+}
+
+.dataPersetujuan .container_dataPersetujuan #table tr td{
+    padding: 10px 10px;
+    font-size: 14px;
+}
+.dataPersetujuan .container_dataPersetujuan #table tr td button{
+    height: 20px;
+    width: 20px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.dataPersetujuan .container_dataPersetujuan #table tr td .btn-setuju{
+    background-color: red;
+    color: white;
+}
+.dataPersetujuan #view_dataPesan{
+    width: 40%;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 40%;
+    bottom: 0;
+    margin: auto;
+    display: none;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+    overflow-y: scroll;
+    padding: 20px;
+}
+.dataPersetujuan #view_dataPesan table tr td{
+    padding: 5px 0px;
+}
+.dataPersetujuan #view_dataPesan table tr td:nth-child(1){
+    width: 60%;
+}
+
+.dataPersetujuan #view_dataPesan table tr td:nth-child(2){
+    width: 20%;
+    text-align: center;
+}
+.dataPersetujuan #view_dataPesan table tr td:nth-child(3){
+    width: 20%;
+}
+
+.pencarian{
+    display: inline-table;
+    margin-left: 10px;
+}
+.pencarian i{
+    position: absolute;
+    background-color: #203390;
+    color: white;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 5px;
+    transform: translate(4px,5px);
+}
+.pencarian .cari{
+    padding-left: 45px;
+    width: 130px;
+}
+
+.pencarian .cari{
+    height: 40px;
+    background-color: #f5f5f5;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+}
+
+.pencarian .cari:focus{
+    width: 300px;
+}
+
+.dataPersetujuan .container_dataPersetujuan .kode_pembayaran{
+    width: 270px;
+    height: max-content;
+    padding: 30px;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.089);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px;
+    margin: auto;
+    background-color: white;
+    display: none;
+}
+.dataPersetujuan .container_dataPersetujuan .kode_pembayaran button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.dataPersetujuan .container_dataPersetujuan .kode_pembayaran .kode-kirim{
+    background-color: #6478d93f;
+    color: #6478D9;
+}
+
+.dataPersetujuan .container_dataPersetujuan .kode_pembayaran .batal-kirim{
+    color: red;
+    background-color: #ff000037;
+}
+
+.dataPersetujuan .container_dataPersetujuan .kode_pembayaran .kode-kirim:hover{
+    color: white;
+    background-color: #6478D9;
+}
+
+.dataPersetujuan .container_dataPersetujuan .kode_pembayaran .batal-kirim:hover{
+    color: white;
+    background-color: red;
+}
+
+.dataPersetujuan .container_dataPersetujuan .kode_pembayaran p{
+    text-align: center;
+}
+.dataPersetujuan .container_dataPersetujuan .kode_pembayaran .surat{
+    width: 100%;
+    height: max-content;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    display: grid;
+    padding: 10px 0px;
+    cursor: pointer;
+    grid-template-columns: max-content auto;
+    background-color: #f2f2f2;
+}
+.dataPersetujuan .container_dataPersetujuan .kode_pembayaran .surat p{
+    text-align: left;
+    margin-top: 5px;
+    font-size: 13px;
+    margin-left: 10px;
+    font-family: poppins-reg;
+}
+.dataPersetujuan .container_dataPersetujuan .kode_pembayaran .surat .ic{
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    border-radius: 7px;
+    background-color:#d8ddf6;
+}
+.dataPersetujuan .container_dataPersetujuan .kode_pembayaran .surat .ic i{
+    color: #203390;
+    margin: 50% 50%;
+    transform: translate(-50%,-50%);
+}
+.dataPersetujuan .container_dataPersetujuan .kode_pembayaran input{
+    height: 40px;
+    margin-left: 0px;
+    background-color: #f5f5f5;
+    outline: none;
+    padding-left:10px ;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    width: 100%;
+}
+
+.dataPersetujuan .container_dataPersetujuan .limit{
+    height: 40px;
+    background-color: #f5f5f5;
+    outline: none;
+    border: none;
+    text-align: center;
+    width: 40px;
+    border-radius: 7px;
+    float: right;
+}
+
+.dataPersetujuan .container_dataPersetujuan .action-page{
+    float: right;
+    margin-right: 20px;
+}
+
+.dataPersetujuan .container_dataPersetujuan .action-page button{
+    width: 130px;
+    height: 40px;
+    background-color: #203390;
+    color: white;
+    border-radius: 10px;
+    transition: 0.1s;
+    font-family: poppins-bold;
+    margin-left: 20px;
+    cursor: pointer;
+    border: 2px solid transparent; 
+}
+.view-error{
+    width: 100%;
+    height: max-content;
+}
+.view-error h2{
+    text-align: center;
+    font-size: 40px;
+    color: #203390;
+    margin-top: 20px;
+    font-family: poppins-bold;
+}
+.view-error .img-error{
+    margin-top: -40px;
+    margin-left: 50%;
+    height: 440px;
+    width: max-content;
+    object-fit: contain;
+    transform: translateX(-50%);
+}
+
+
+.keterangan{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    height: 20px;
+    width: 20px;
+    background-color: #6478d93f;
+    color: #203390;
+}
+
+.keterangan i{
+    margin: 50% 50%;
+    transform: translate(-50%,-50%);
+}

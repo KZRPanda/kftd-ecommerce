@@ -1,0 +1,191 @@
+@import url(font.css);
+*{
+    padding: 0;
+    font-family: poppins-reg;
+    margin: 0;
+}
+nav{
+    width: 100%;
+    height: max-content;
+    left: 40px;
+    top: 25px;
+    display: grid;
+    grid-template-areas: 'logo search cart profile';
+    grid-template-columns: max-content 900px 140px max-content;
+}
+nav .logo{
+    cursor: pointer;
+}
+
+nav .logo img{
+    width: 197.13px;
+    height: max-content;
+}
+nav .pencarian{
+    background-color: transparent;
+}
+
+nav .pencarian i{
+    transform: translateX(33px);
+}
+nav .pencarian input:focus{
+    outline: none;
+}
+nav .pencarian input{
+    font-size: 16px;
+    padding:15px;
+    padding-left: 40px;
+    width:90%;
+    margin-top: 40px;
+    border: none;
+    background: #F5F5F5;
+    z-index: 1;
+    border-radius: 50px;
+}
+nav .pencarian button{
+    position: absolute;
+    transform: translate(-140px,40px);
+    z-index: 3;
+    width: 161.15px;
+    font-family: poppins-bold;
+    height: 59px;
+    border: none;
+    border-radius: 40px;
+    background-color: #203390;
+    color: white;
+    font-size: 14px;
+}
+
+nav .cart i{
+    font-size: 30px;
+    height: max-content;
+    width: max-content;
+    transform: translate(20px,50px);
+    color: #203390;
+}
+nav .cart{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+nav .profile{
+    margin: 40px auto;
+    background-color: transparent;
+}
+
+nav .profile .gambar-profile{
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+    border-radius: 100%;
+    margin: auto;
+}
+nav .profile .gambar-profile img{
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+@media only screen and (max-width:450px){
+    nav{
+        width: 100%;
+        height: 90px;
+        left: 40px;
+        top: 0px;
+        background-color: #20339030;
+        display: grid;
+        grid-template-areas: 'logo search cart profile';
+        grid-template-columns: max-content 40% 20% max-content;
+    }
+    nav .logo{
+        width: 80px;
+        top: 0;
+        bottom: 0;
+        margin: auto auto;
+        cursor: pointer;
+    }
+    
+    nav .logo img{
+        width: 70px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        height: max-content;
+    }
+    nav .pencarian{
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        margin: auto auto;
+        background-color: transparent;
+    }
+    
+    nav .pencarian i{
+        font-size: 12px;
+        margin: 12px 10px;
+        position: absolute;
+        transform: translateX(0px);
+    }
+    nav .pencarian input:focus{
+        outline: none;
+    }
+    nav .pencarian input{
+        font-size: 10px;
+        padding:10px 15px;
+        padding-left: 30px;
+        width:90%;
+        margin-top: 0px;
+        border: none;
+        background: #F5F5F5;
+        z-index: 1;
+        border-radius: 50px;
+    }
+    nav .pencarian button{
+        position: absolute;
+        transform: translate(0px,0px);
+        z-index: 3;
+        display: none;
+        padding: 10px 15px;
+        width: max-content;
+        font-family: poppins-bold;
+        height: max-content;
+        border: none;
+        border-radius: 40px;
+        background-color: #203390;
+        color: white;
+        font-size: 9px;
+    }
+    
+    nav .cart i{
+        font-size: 20px;
+        height: max-content;
+        width: max-content;
+        color: #203390;
+    }
+    nav .cart{
+        margin-top: -17px;
+    }
+    
+    nav .profile{
+        top: 0;
+        bottom: 0;
+        margin: auto auto;
+        background-color: transparent;
+    }
+    
+    nav .profile .gambar-profile{
+        height: 50px;
+        width: 50px;
+        background-color: transparent;
+        border-radius: 100%;
+        margin: auto;
+    }
+    nav .profile .gambar-profile img{
+        object-fit: cover;
+        border-radius: 100%;
+    }
+}
+
+@media only screen and (min-width : 1450px) {
+    nav{
+        grid-template-columns: max-content auto 140px 150px;
+    }
+}

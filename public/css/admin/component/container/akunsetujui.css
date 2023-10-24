@@ -1,0 +1,48 @@
+@import url(../../../font.css);
+*{
+    font-family: poppins-reg;
+}
+.akunsetujui{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color:transparent;
+}
+
+.akunsetujui .container-akunsetujui{
+    width: 90%;
+    margin-left: 50%;
+    margin-top: 20px;
+    display: block;
+    padding: 20px;
+    height: 88%;
+    transform: translateX(-50%);
+    background-color: white;
+}
+
+.akunsetujui .container-akunsetujui table tr td{
+    padding: 5px 15px;
+    height: min-content;
+    font-size: 12px;
+    background-color: #f2f2f2;
+}
+.akunsetujui .container-akunsetujui table tr td button:first-child{
+    background-color: #6478d93f;
+    color: #6478D9;
+    border: none;
+    width: 100%;
+    padding: 10px 15px;
+}
+.akunsetujui .container-akunsetujui table tr td button:last-child{
+    color: red;
+    background-color: #ff000037;
+    margin-top: 10px;
+    border: none;
+    width: 100%;
+    padding: 10px 15px;
+}
+.akunsetujui .container-akunsetujui table tr th{
+    padding: 10px 0;
+    font-size: 14px;
+    font-family: poppins-reg;
+}

@@ -1,0 +1,136 @@
+@import url(../../font.css);
+.dataPengiriman{
+    background-color: rgba(127, 255, 212, 0);
+    height: 100%;
+}
+.pengiriman{
+    width: 100%;
+    display: grid;
+    height: 100%;
+    grid-template-rows: 100% 100%;
+    grid-template-columns: 50% 50%;
+}
+.pengiriman .kiri{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.pengiriman .kiri table tr th{
+    padding: 5px;
+}
+.pengiriman .kiri table tr td{
+    padding: 10px 7px;
+}
+.pengiriman .kiri table tr:first-child th{
+    background-color: #f2f2f2;
+    position: sticky;
+}
+.pengiriman .kiri table tr:hover td{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.pengiriman .kiri button{
+    width: 99%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 40px;
+    font-family: poppins-bold;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 7px;
+    transition: 0.2s;
+    margin-bottom: 20px;
+}
+
+.pengiriman .kiri button:hover{
+    background-color: #d0d0d0;
+}
+
+.pengiriman .kanan .cards{
+    height: 100%;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.pengiriman .kanan .cards .row{
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    width: 100%;
+}
+.pengiriman .kanan .cards .row .col .card{
+    height: 300px;
+    width: 78%;
+    cursor: pointer;
+    padding: 20px;
+    margin: 0px 0px 10px 0px;
+    overflow: hidden;
+    border: 2px solid white;
+    margin-left: 50%;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    transform: translateX(-50%);
+}
+.pengiriman .kanan .cards .row .col .card:hover{
+    border-color: black;
+}
+.pengiriman .kanan .cards .row .col .card p{
+    border-radius: 7px;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 8px 10px;
+}
+.pengiriman .kanan .cards .row .col .card p:nth-child(2),
+.pengiriman .kanan .cards .row .col .card p:nth-child(4){
+    height: 20px;
+    -webkit-line-clamp: 1;
+}
+.pengiriman .kanan .cards .row .col .card p:nth-child(6),
+.pengiriman .kanan .cards .row .col .card p:nth-child(8){
+    height: 38px;
+    -webkit-line-clamp: 2;
+}
+
+.pengiriman .kanan .cards .row .col .card label{
+    font-family: poppins-bold;
+}
+
+.buat-pengiriman{
+    height: max-content;
+    width:max-content;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    background-color: white;
+    top: 0;
+    font-size: 12px;
+    padding: 15px 20px;
+    bottom: 0;
+    display: none;
+    border-radius: 7px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.097);
+    margin: auto;
+}
+
+.buat-pengiriman input,.buat-pengiriman button{
+    height: 40px;
+    padding: 0;
+    margin: 15px 0;
+    display: block;
+}
+
+.buat-pengiriman input{
+    width: 150px;
+}
+
+.buat-pengiriman button{
+    width: 153px;
+}

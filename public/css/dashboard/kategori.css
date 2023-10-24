@@ -1,0 +1,149 @@
+.kategori{
+    width: 90%;
+    height: 0px;
+    padding: 0px 0;
+    background-color: #f5f5f5;
+    position: absolute;
+    z-index: 10;
+    margin-left: 50%;
+    transform: translateX(-50%) translateY(-20px);
+    box-shadow:  -20px 20px 60px #bebebe93,
+    20px -20px 60px #ffffff71;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.kategori .isi-kategori .check i{
+    margin: 50% 50%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+    color: white;
+}
+
+.kategori .isi-kategori p{
+    text-align: center;
+    font-size: 13px;
+}
+
+.kategori h1{
+    margin-bottom: 30px;
+    margin-left: 30px;
+    font-size: 22px;
+    color: #585858;
+    font-family: poppins-bold;
+}
+
+.kategori .isi-kategori{
+    width:max-content;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+.kategori .isi-kategori .gambar{
+    height: max-content;
+    width: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: inline-block;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.kategori .isi-kategori .check{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    z-index: 2;
+    display: none;
+    transform: translateY(-108px);
+    background-color: #6478D9;
+}
+
+.kategori .isi-kategori .gambar:hover{
+    transform: scale(1.15);
+}
+
+.kategori .isi-kategori .gambar img{
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    object-fit: cover ;
+    object-position: center;
+}
+
+@media only screen and (max-width : 450px) {
+    .kategori{
+        width: 90%;
+        height: max-content;
+        padding: 20px 0;
+        background-color: #ffffff;
+        position: relative;
+        z-index: 1;
+        border-radius: 10px;
+        border: 2px solid #e7e7e7;
+        box-shadow: none;
+        margin-left: 50%;
+        transform: translateX(-50%) translateY(-10px);
+        transition: 0.3s;
+        overflow: scroll;
+    }
+
+    .kategori .isi-kategori .gambar img{
+        height: 50px;
+        width: 50px;
+        overflow: hidden;
+        object-fit: cover ;
+        object-position: center;
+    }
+    .kategori .isi-kategori .check{
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        z-index: 2;
+        display: none;
+        transform: translateY(-55px);
+        background-color: #6478D9;
+    }
+    .kategori .isi-kategori .check i{
+        margin: 50% 50%;
+        transform: translate(-50%,-50%);
+        font-size: 20px;
+        color: white;
+    }
+    .kategori .isi-kategori .gambar{
+        height: max-content;
+        width: 50px;
+        margin-left: 30px;
+        margin-right: 0px;
+        display: inline-block;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .kategori .isi-kategori .gambar:last-child{
+        margin-right: 30px;
+    }
+
+    .kategori .isi-kategori{
+        width:max-content;
+        height: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+    }
+
+    .kategori .isi-kategori p{
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .kategori h1{
+        font-family: poppins-reg;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+}

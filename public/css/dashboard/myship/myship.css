@@ -1,0 +1,148 @@
+@import url(component-ship/cekpesanan.css);
+*{
+    transition: 0.2s ease-in-out;
+    scroll-behavior: smooth;
+}
+.myship{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: max-content;
+    padding-bottom: 20px;
+    background-color: #f5f5f5;
+}
+.myship .header-ship{
+    width: 98%;
+    background-color: transparent;
+    height: max-content;
+    margin-left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-areas: "A B C D E F";
+}
+
+.myship .header-active{
+    background-color: #203390 !important;
+    color: white !important;
+}
+
+.myship .header-ship .header-col{
+    text-align: center;
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px 0px;
+    border-bottom: 2px solid transparent;
+}
+
+.myship .header-ship .header-col:hover{
+    border-bottom: 2px solid #203390;
+}
+
+.myship .wrap-container-ship{
+    width: 98%;
+    height: max-content;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 35px;
+    background-color:transparent;
+}
+
+.form-bayar{
+    width: 360px;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.097);
+    display: none;
+    padding: 20px 40px;
+    height: max-content;
+    border-radius: 7px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+.form-bayar i{
+    cursor: pointer;
+    float: right;
+}
+.form-bayar label{
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: poppins-bold;
+    display: block;
+}
+
+.form-bayar  button{
+    width: 100%;
+    height: 40px;
+    background-color: #6478d93f;
+    color: #6478D9;
+    margin-top: 20px;
+    border: none;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form-bayar  button:hover{
+    background-color: #6478d9;
+    color: #ffffff;
+}
+
+.form-bayar .kode{
+    text-align: center;
+    color: red;
+}
+
+.form-bayar .wrap{
+    padding: 10px;
+    background-color: #c9c9c93f;
+    color: #000000;
+    border-radius: 5px;
+}
+
+.form-bayar .wrap p{
+    text-align: justify;
+}
+
+
+@media only screen and (max-width:450px){
+    .myship{
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: max-content;
+        height: 100%;
+        padding-bottom: 30px;
+        background-color: #f2f2f2;
+    }
+    .myship .header-ship{
+        width: 98%;
+        background-color: transparent;
+        height: max-content;
+        margin-left: 50%;
+        transform: translateX(-50%) translateY(20px);
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-areas: "A B C D E F";
+    }
+    
+    .myship .header-active{
+        background-color: #203390 !important;
+        color: white !important;
+    }
+    
+    .myship .header-ship .header-col{
+        text-align: center;
+        cursor: pointer;
+        margin: 5px;
+        padding: 5px 0px;
+        font-size: 10px;
+        border-bottom: 2px solid transparent;
+    }
+    
+
+}

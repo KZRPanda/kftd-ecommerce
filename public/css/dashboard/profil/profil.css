@@ -1,0 +1,454 @@
+.modal{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.253);
+    display: none;
+}
+
+.modal .modal-content{
+    height: max-content;
+    width: max-content;
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+}
+.modal .modal-content img{
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.modal .modal-content .note{
+    font-size: 14px;
+    color: red;
+}
+.modal .modal-content .btn-wrap{
+    width: max-content;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+.modal .modal-content .btn-modal{
+    padding: 6px 13px;
+    border-radius: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.modal .modal-content #yes{
+    color: white;
+    border: 2px solid #203390;
+    background-color: #203390;
+}
+
+.modal .modal-content #no{
+    background-color: white;
+    color: #203390;
+    border: 2px solid #203390;
+}
+
+.profil .container-profil .title{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.verif{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.253);
+    display: none;
+}
+
+.verif .container-verif{
+    height: max-content;
+    width: max-content;
+    background-color: white;
+    margin: 16% auto;
+    padding: 26px 20px;
+}
+
+.verif .container-verif .header-verif{
+    width: 100%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: auto max-content;
+}
+
+.verif .container-verif .header-verif i{
+    margin: auto 0;
+}
+
+.verif .container-verif ul li{
+    margin: 5px;
+    display: inline-block;
+    list-style: none;
+}
+
+.verif .container-verif ul{
+    margin-top: 20px;
+}
+
+.verif .container-verif ul li input{
+    border: none;
+    border-radius: 7px;
+    padding: 9px 8px;
+    background-color: #f5f5f5;
+    width: 300px;
+    outline-color: #203390;
+}
+
+.profil{
+    background-color: #f5f5f5;
+    width: 97%;
+    height: max-content;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    display: grid;
+    border-radius: 26px;
+    padding: 20px 0px 20px 0px;
+    z-index: -1;
+    grid-template-areas: 'kiri tengah kanan';
+    grid-template-columns: max-content 10px auto;
+}
+
+.profil .divider{
+    width: 2px;
+    height: 80%;
+    margin: auto 0;
+    background-color: rgba(0, 0, 0, 0.083);
+}
+
+.profil .form{
+    padding: 10px 40px;
+}
+
+.profil .form table{
+    margin-top: 10px;
+}
+
+.profil .form table tr td:first-child{
+    width: 160px;
+}
+
+.profil .form table tr td:last-child{
+    width: max-content;
+}
+
+.profil .form table tr td{
+    padding: 2px;
+}
+
+.profil .form table tr td input{
+    border: none;
+    border-radius: 7px;
+    padding: 9px 8px;
+    width: 360px;
+    outline-color: #203390;
+}
+
+.profil .form table tr td input:focus{
+    outline-color: #203390;
+}
+
+.profil .form table tr td .select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 5px 8px;
+    width: 200px;
+    border-radius: 7px;
+    border: none;
+}
+
+.profil .form table tr td .ubah{
+    margin-top: 20px;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: #203390;
+}
+.profil .form table tr td .ubah:hover{
+    outline: 3px solid #203390;
+    background-color: #5f74dc;
+}
+
+.profil .form table tr td p{
+    display: inline-block;
+}
+
+.profil .form table tr td .select::after{
+    content: '>';
+    position: absolute;
+}
+
+.profil .form table tr td .bt{
+    transform: translate(-30px,2px);
+}
+
+.profil .body-profil{
+    height: max-content;
+    width: max-content;
+    background-color: transparent;
+    margin: 40px auto;
+}
+
+.profil .body-profil img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.profil .body-profil .file{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 170px;
+    padding: 10px 13px;
+    background-color:#203390;
+    border-radius: 5px;
+    margin: 30px auto;
+}
+.profil .body-profil .file::-webkit-file-upload-button{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.profil .body-profil input[type=file]::file-selector-button{
+    appearance: none;
+    -moz-appearance: none;
+}
+
+.profil .body-profil .files i{
+    color: white;
+    transform: translate(-35px,43px);
+    position: absolute;
+}
+
+.profil .body-profil .file::-webkit-file-upload-button{
+    visibility: hidden;
+}
+
+.profil .body-profil .file::before {
+    content: 'Pilih foto profil baru';
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border-radius: 3px;
+    padding: 5px 8px;
+    width: 140px;
+    outline: none;
+    color: white;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 10pt;
+  }
+
+@media only screen and (max-width : 450px)
+{
+    .profil{
+        background-color: #f5f5f5;
+        width: 95%;
+        overflow: hidden;
+        height: max-content;
+        margin: 10px auto;
+        margin-bottom: 20px;
+        display:block;
+        border-radius: 26px;
+        padding: 10px 0px 10px 0px;
+        z-index: -1;
+    }
+    
+    .profil .divider{
+        width: 90%;
+        height: 2px;
+        margin: auto 50%;
+        transform: translateX(-50%);
+        margin-top: 20px;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.083);
+    }
+    
+    .profil .form{
+        width: 90%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        font-family: 10px;
+        padding: 0;
+    }
+    
+    .profil .form table{
+        margin-top: 10px;
+    }
+    
+    .profil .form table tr td:first-child{
+        width: 40%;
+    }
+    
+    .profil .form table tr td:last-child{
+        width: 60%;
+    }
+    
+    .profil .form table tr td{
+        padding: 2px;
+        font-size: 10px;
+    }
+    
+    .profil .form table tr td input{
+        border: none;
+        border-radius: 7px;
+        padding: 9px 8px;
+        font-size: 10px;
+        width: 100%;
+        outline-color: #203390;
+    }
+    
+    .profil .form table tr td input:focus{
+        outline-color: #203390;
+    }
+    .profil .form table tr td i{
+        position: absolute;
+        font-size: 15px;
+        margin-top: 7px;
+    }
+    .profil .form table tr td .select{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding: 9px 8px;
+        width: 100%;
+        border-radius: 7px;
+        font-size: 10px;
+        border: none;
+    }
+    
+    .profil .form table tr td .ubah{
+        margin-top: 20px;
+        color: white;
+        border: none;
+        width: 100%;
+        padding: 10px 25px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 12px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        background-color: #203390;
+    }
+    .profil .form table tr td .ubah:hover{
+        outline: 3px solid #203390;
+        background-color: #5f74dc;
+    }
+    
+    .profil .form table tr td p{
+        display: inline-block;
+    }
+    
+    .profil .form table tr td .select::after{
+        content: '>';
+        position: absolute;
+    }
+    
+    .profil .form table tr td .bt{
+        transform: translate(-30px,2px);
+    }
+    
+    .profil .body-profil{
+        height: max-content;
+        width: max-content;
+        background-color: transparent;
+        margin: 20px auto;
+    }
+    
+    .profil .body-profil img{
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 100%;
+    }
+    
+    .profil .body-profil .file{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 170px;
+        padding: 10px 13px;
+        background-color:#203390;
+        border-radius: 5px;
+        margin: 30px auto;
+    }
+    .profil .body-profil .file::-webkit-file-upload-button{
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+    }
+    
+    .profil .body-profil input[type=file]::file-selector-button{
+        appearance: none;
+        -moz-appearance: none;
+    }
+    
+    .profil .body-profil .files i{
+        color: white;
+        transform: translate(-35px,43px);
+        position: absolute;
+    }
+    
+    .profil .body-profil .file::-webkit-file-upload-button{
+        visibility: hidden;
+    }
+    
+    .profil .body-profil .file::before {
+        content: 'Pilih foto profil baru';
+        display: inline-block;
+        background: linear-gradient(top, #f9f9f9, #e3e3e3);
+        border-radius: 3px;
+        padding: 5px 8px;
+        width: 140px;
+        outline: none;
+        color: white;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 10pt;
+      }
+      .verif{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.253);
+        display: none;
+    }
+    
+    .verif .container-verif{
+        height: max-content;
+        width: 80%;
+        position: fixed;
+        background-color: white;
+        margin: auto auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding: 26px 20px;
+    }
+
+    .verif .container-verif ul li input{
+        border: none;
+        border-radius: 7px;
+        padding: 9px 8px;
+        background-color: #f5f5f5;
+        width: 95%;
+        outline-color: #203390;
+    }
+}

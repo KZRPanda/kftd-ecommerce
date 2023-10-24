@@ -1,0 +1,247 @@
+.dataDibayar{
+    width: 100%;
+    height: 100vh;
+}
+
+.dataDibayar .gambar-bukti{
+    height: max-content;
+    width: max-content;
+    position: fixed;
+    z-index: 2;
+    overflow: hidden;
+    border-radius: 10px;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.094);
+    background-color: #ffffff;
+    display: none;
+    bottom: 0;
+    margin: auto;
+}
+.dataDibayar .gambar-bukti .btn-ext{
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    margin: 10px 30px;
+    background-color: rgba(255, 255, 255, 0.464);
+    position: absolute;
+    right: 0;
+}
+.dataDibayar .gambar-bukti .btn-ext i{
+    margin: 50% 50%;
+    transform: translate(-50%,-50%);
+}
+.dataDibayar .gambar-bukti img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.dataDibayar .container_dataDibayar{
+    width: 90%;
+    margin-left: 50%;
+    display: block;
+    padding: 20px;
+    height: 88vh;
+    border-radius: 20px;
+    transform: translateX(-50%) translateY(20px);
+    background-color: white;
+}
+
+.dataDibayar .container_dataDibayar .pencarian{
+    display: inline-table;
+    margin-left: 10px;
+}
+.dataDibayar .container_dataDibayar .pencarian i{
+    position: absolute;
+    background-color: #203390;
+    color: white;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 5px;
+    transform: translate(4px,5px);
+}
+.dataDibayar .container_dataDibayar .pencarian .cari{
+    padding-left: 45px;
+    width: 130px;
+}
+
+.dataDibayar .container_dataDibayar .pencarian .cari{
+    height: 40px;
+    background-color: #f5f5f5;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+}
+
+.dataDibayar .container_dataDibayar .pencarian .cari:focus{
+    width: 300px;
+}
+
+.dataDibayar .container_dataDibayar .limit{
+    height: 40px;
+    background-color: #f5f5f5;
+    outline: none;
+    border: none;
+    text-align: center;
+    width: 40px;
+    border-radius: 7px;
+    float: right;
+}
+
+.dataDibayar .container_dataDibayar .action-page{
+    float: right;
+    margin-right: 20px;
+}
+
+.dataDibayar .container_dataDibayar .action-page button{
+    width: 130px;
+    height: 40px;
+    background-color: #203390;
+    color: white;
+    border-radius: 10px;
+    transition: 0.1s;
+    font-family: poppins-bold;
+    margin-left: 20px;
+    cursor: pointer;
+    border: 2px solid transparent;  
+}
+
+.dataDibayar .container_dataDibayar #tb_dataDibayar{
+    padding: 10px;
+    height: 80%;
+    margin-top: 20px;
+    width: 97%;
+    overflow-y: scroll;
+}
+.dataDibayar .container_dataDibayar #tb_dataDibayar table{
+    width: 100%;
+    gap: 0;
+}
+.dataDibayar .container_dataDibayar #tb_dataDibayar table tr{
+    background-color: rgba(255, 0, 0, 0);
+}
+.dataDibayar .container_dataDibayar #tb_dataDibayar table tr:not(:first-child):hover{
+    background-color: #6377d93f;
+}
+.dataDibayar .container_dataDibayar #tb_dataDibayar table tr th{
+    padding: 0px 0px 10px 0px;
+}
+.dataDibayar .container_dataDibayar #tb_dataDibayar table tr td{
+    font-size: 14px;
+    white-space: nowrap;
+    padding: 7px 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dataDibayar .container_dataDibayar #tb_dataDibayar table tr td p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 250px;
+}
+
+.dataDibayar .container_dataDibayar #tb_dataDibayar table tr td .ac{
+    width: 30px;
+    height: 30px;
+    margin-left: 50%;
+    color: #203390;
+    cursor: pointer;
+    transform: translateX(-50%);
+    background-color: #6377d93f;
+    border-radius: 7px;
+    transition: 0.1s linear;
+}
+
+.dataDibayar .container_dataDibayar #tb_dataDibayar table tr td .ac:hover{
+    color: white;
+    background-color: #203390;
+}
+
+.dataDibayar .container_dataDibayar #tb_dataDibayar table tr td .ac i{
+    margin: 50% 50%;
+    transform: translate(-50%,-50%);
+}
+
+.dataDibayar .view-bukti{
+    width: 230px;
+    height: max-content;
+    position: fixed;
+    z-index: 1;
+    display: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 10px 20px rgba(39, 56, 107, 0.09);
+    padding: 20px;
+    border-radius: 7px;
+}
+.dataDibayar .view-bukti .surat{
+    margin: 20px 0px;
+}
+.dataDibayar .view-bukti .surat:hover{
+    background-color: #d6fdcb;
+}
+.dataDibayar .view-bukti .surat{
+    width: 100%;
+    height: max-content;
+    border-radius: 7px;
+    display: grid;
+    padding: 10px 0px;
+    cursor: pointer;
+    grid-template-columns: max-content auto;
+    background-color: #f2f2f2;
+}
+.dataDibayar .view-bukti .surat p{
+    text-align: left;
+    margin-top: 5px;
+    font-size: 13px;
+    margin-left: 10px;
+    font-family: poppins-reg;
+}
+.dataDibayar .view-bukti .surat .ic{
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    border-radius: 7px;
+    background-color:#d8ddf6;
+}
+.dataDibayar .view-bukti .surat .ic i{
+    color: #203390;
+    margin: 50% 50%;
+    transform: translate(-50%,-50%);
+}
+
+.dataDibayar .view-bukti button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+}
+
+.dataDibayar .view-bukti .btn1{
+    color: #203390;
+    background-color: #6377d93f;
+}
+
+.dataDibayar .view-bukti .btn1:hover{
+    color: #ffffff;
+    background-color: #203390;
+}
+
+.dataDibayar .view-bukti .btn2{
+    color: black;
+    margin-top: 20px;
+    background-color: #f2f2f2;
+}

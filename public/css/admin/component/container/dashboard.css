@@ -1,0 +1,237 @@
+.container::-webkit-scrollbar{
+    width: 0;
+    appearance: none;
+    -moz-appearance: none;
+}
+.container{
+    height: 100vh;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+.container .dashboard{
+    width: auto;
+}
+.container .dashboard .bottom-dashboard .card{
+    width: 380px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    height: 183px;
+    display: grid;
+    grid-template-areas: "kiri kanan";
+    grid-template-columns: auto max-content;
+    grid-template-rows: 100% 100%;
+    border-radius: 42px;
+}
+.container .dashboard .bottom-dashboard .card .w{
+    height: 183px;
+    width: 100%;
+}
+.container .dashboard .bottom-dashboard .card .w .detail-card{
+    padding: 0;
+    height: max-content;
+    width: auto;
+    margin-top: 50px;
+    transform: translateY(-50);
+    padding-left: 30px;
+}
+.container .dashboard .dashboard .bottom-dashboard .card .detail-card h3{
+    font-family: poppins-reg;
+    margin-top: -5px;
+}
+
+.container .dashboard .bottom-dashboard .card .detail-card p,
+.container .dashboard .bottom-dashboard .card .detail-card h2
+{
+    margin-bottom: 5px;
+}
+
+.container .dashboard .bottom-dashboard .card .detail-card p{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.445);
+}
+
+.container .dashboard .bottom-dashboard .card .statistik-card{
+    height:183px;
+    width: 140px;
+}
+.container .dashboard .bottom-dashboard .card .statistik-card i{
+    font-size: 80px;
+    margin: 60% 50%;
+    color: rgb(0, 0, 0);
+    transform: translate(-50%,-50%);
+}
+
+.container .dashboard .bottom-dashboard{
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: "1 2";
+    grid-template-columns: auto;
+}
+.container .dashboard .top-dashboard{
+    height:max-content;
+    width: auto;
+    display: grid;
+    margin: 0;
+    grid-template-areas: "login barang";
+    grid-template-columns: max-content auto;
+}
+.container .dashboard .top-dashboard .jum-barang-pesan{
+    width: 90%;
+    background-color: white;
+    height: 320px;
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.container .dashboard .top-dashboard .jum-barang-pesan .wrap-jum-barang .spin{
+    float: right;
+    margin-top: 5px;
+    display: none;
+    margin-right: 10px;
+    animation: putar 1s infinite linear;
+}
+
+@keyframes putar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.container .dashboard .top-dashboard .jum-barang-pesan p{
+    font-family: poppins-bold;
+}
+.container .dashboard .top-dashboard .jum-barang-pesan select{
+    float: right;
+}
+.container .dashboard .top-dashboard .jum-barang-pesan select,
+.container .dashboard .top-dashboard .jum-barang-pesan p{
+    display: inline-block;
+}
+.container .dashboard .top-dashboard .jum-barang-pesan table{
+    width: 100%;
+    outline: none;
+    margin-top: 10px;
+}
+.container .dashboard .top-dashboard .jum-barang-pesan table tr th{
+    font-family: poppins-reg;
+}
+.container .dashboard .top-dashboard .jum-barang-pesan table tr{
+    height: 40px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0s !important;
+}
+.container .dashboard .top-dashboard .jum-barang-pesan table tr td{
+    border: none;
+    padding-left: 10px;
+}
+
+.container .dashboard .top-dashboard .jum-barang-pesan table td:last-child{
+    text-align: center;
+}
+
+.container .dashboard .table-login-user table{
+    height: max-content;
+    border: 0;
+    width: 300px;
+    background-color: none;
+}
+.container .dashboard .login-user p{
+    font-family: poppins-bold;
+}
+.container .dashboard .login-user{
+    width: max-content;
+    height: 320px;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+.container .dashboard .table-login-user table tr{
+    height: 30px;
+    font-size:13px;
+    transition: 0s;
+    color: black;
+    cursor: pointer;
+}
+
+.container .dashboard .table-login-user table tr td{
+    border: none;
+    height: 30px;
+    padding-left: 7px;
+    transition: 0s;
+}
+
+.container .dashboard .table-login-user table tr td:first-child{
+    width: 10%;
+    padding: 0;
+    text-align: center;
+}
+
+.container .dashboard .table-login-user table tr td:last-child{
+    width: 150px;
+}
+
+.container .dashboard .table-login-user{
+    height: 230px;
+    margin-bottom: 10px;
+}
+
+.container .dashboard .top-dashboard .footer-login-user{
+    background-color: black;
+    width: 300px;
+    border-radius: 50px;
+    display: grid;
+    grid-template-areas: "1 2";
+    grid-template-columns: auto;
+    position: absolute;
+    z-index: 10;
+    height: 50px;
+}
+.container .dashboard .top-dashboard .footer-login-user::before{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.247);
+    position: absolute;
+    margin-top: 30px;
+    height: 30px;
+    width: 260px;
+    margin-left: auto;
+    left: 0;
+    filter: blur(10px);
+
+    right: 0;
+    margin-right: auto;
+    border-radius: 50px;
+    z-index: -1;
+}
+.container .dashboard .top-dashboard .footer-login-user button{
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    margin: 0px 50%;
+    transform: translate(-50%,0%);
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0s;
+}
+
+.container .dashboard .top-dashboard .footer-login-user button:first-child{
+    border-radius: 50px 0 0 50px;
+}
+
+.container .dashboard .top-dashboard .footer-login-user button:last-child{
+    border-radius: 0 50px 50px 0;
+}
+
+.container .dashboard .top-dashboard .footer-login-user button:hover{
+    background-color: #203390;
+    color: white;
+}

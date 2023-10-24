@@ -1,0 +1,204 @@
+.cekpesanan{
+    height: max-content;
+    width: 400px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.097);
+    background-color: white;
+    position: fixed;
+    z-index: 9;
+    display: none;
+}
+
+.cekpesanan .isiCek{
+    height: 320px;
+    width: 90%;
+    overflow-y: scroll;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+
+.cekpesanan button{
+    color: #6478D9;
+    background-color: #6478d93f;
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    border: none;
+    margin-top: 20px;
+    outline: none;
+}
+
+.cekpesanan i{
+    float: right;
+}
+
+.cekpesanan .isiCek .detail{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #6478d93f;
+    color: #6478D9;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 7px;
+    width: 90%;
+}
+
+.cekpesanan .isiCek .row{
+    width: 100%;
+    height: max-content;
+    display: grid;
+    margin-bottom: 20px;
+    background-color: none;
+    grid-template-columns: max-content auto;
+}
+
+.cekpesanan .isiCek .row .col:first-child{
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    background-color: #cfcfcf;
+    margin-top: 5px;
+    border-radius: 100%;
+}
+
+.cekpesanan .isiCek .row:first-child p{
+    color: #8c8c8c !important;
+    font-family: poppins-reg;
+    font-weight: 100;
+}
+.cekpesanan .isiCek .row .col:last-child{
+    height: max-content;
+    width: auto;
+}
+
+.cekpesanan .isiCek .row .col h3,.cekpesanan .isiCek .row .col p{
+    color: #cfcfcf;
+    font-family: poppins-reg;
+    font-weight: 100;
+}
+
+.cekpesanan .isiCek .row .col h3{
+    font-size: 17px;
+}
+
+.cekpesanan .isiCek .row .main{
+    color: #203390 !important;
+}
+.cekpesanan .isiCek .row .main-c{
+    background-color: #203390 !important;
+}
+
+@media only screen and (max-width : 450px){
+    .cekpesanan{
+        height: max-content;
+        width: 80%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        padding: 20px 20px;
+        border-radius: 20px;
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.097);
+        background-color: white;
+        position: fixed;
+        z-index: 9;
+        display: none;
+    }
+
+    .cekpesanan h2{
+        font-size: 20px;
+        font-family: poppins-bold;
+    }
+    
+    .cekpesanan .isiCek{
+        height: 320px;
+        width: 90%;
+        overflow-y: scroll;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 20px;
+    }
+    
+    .cekpesanan button{
+        color: #6478D9;
+        background-color: #6478d93f;
+        width: 100%;
+        height: 40px;
+        border-radius: 7px;
+        border: none;
+        margin-top: 20px;
+        outline: none;
+    }
+    
+    .cekpesanan i{
+        float: right;
+    }
+    
+    .cekpesanan .isiCek .detail{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        background-color: #6478d93f;
+        color: #6478D9;
+        font-size: 14px;
+        padding: 10px;
+        border-radius: 7px;
+        width: 90%;
+    }
+    
+    .cekpesanan .isiCek .row{
+        width: 100%;
+        height: max-content;
+        display: grid;
+        margin-bottom: 20px;
+        background-color: none;
+        grid-template-columns: max-content auto;
+    }
+    
+    .cekpesanan table tr td{
+        font-size: 15px;
+    }
+
+    .cekpesanan .isiCek .row .col:first-child{
+        height: 15px;
+        width: 15px;
+        margin-right: 10px;
+        background-color: #cfcfcf;
+        margin-top: 5px;
+        border-radius: 100%;
+    }
+    
+    .cekpesanan .isiCek .row:first-child p{
+        color: #8c8c8c !important;
+        font-family: poppins-reg;
+        font-weight: 100;
+    }
+    .cekpesanan .isiCek .row .col:last-child{
+        height: max-content;
+        width: auto;
+    }
+    
+    .cekpesanan .isiCek .row .col h3,.cekpesanan .isiCek .row .col p{
+        color: #cfcfcf;
+        font-family: poppins-reg;
+        font-weight: 100;
+    }
+    
+    .cekpesanan .isiCek .row .col h3{
+        font-size: 17px;
+    }
+    
+    .cekpesanan .isiCek .row .main{
+        color: #203390 !important;
+    }
+    .cekpesanan .isiCek .row .main-c{
+        background-color: #203390 !important;
+    }
+}

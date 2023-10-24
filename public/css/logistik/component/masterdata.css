@@ -1,0 +1,359 @@
+@import url(../../../font.css);
+.masterdata{
+    width: 100%;
+    margin-left: 50%;
+    margin-top: 0px;
+    display: block;
+    padding: 20px;
+    padding-top: 10px;
+    height: 82vh;
+    border-radius: 14px;
+    transform: translateX(-50%);
+    background-color: rgb(255, 255, 255);
+}
+
+.masterdata h3{
+    font-family: poppins-bold;
+}
+
+.masterdata .container-masterdata{
+    width: 100%;
+    margin-top: 15px;
+    height: 97%;
+    overflow-y: scroll;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+}
+
+.masterdata .container-masterdata section h5{
+    text-align: center;
+}
+
+.masterdata .container-masterdata section:nth-child(2){
+    border-left: 2px solid #f2f2f2;
+    border-right: 2px solid #f2f2f2;
+}
+
+.masterdata .container-masterdata section .insert-csv {
+    height: 100px;
+    width: 80%;
+    margin-top: 20px;
+    border: 2px dashed #6478D9;
+    margin-left: 50%;
+    background-color: #6478d91a;
+    transform: translateX(-50%);
+    overflow: hidden;
+    transition: 0s linear;
+    border-radius: 20px;
+}
+.masterdata .container-masterdata section .insert-csv p{
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.masterdata .container-masterdata section .insert-csv button{
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 50%;
+    border: 2px solid #8e9dec;
+    display: none;
+    background-color: #8e9dec;
+    color: white;
+    border-radius: 7px;
+    transform: translateX(-50%);
+    width: 80%;
+    padding: 7px 0;
+}
+.masterdata .container-masterdata section .insert-csv button:hover{
+    background-color: white;
+    color: #6478D9;
+}
+.masterdata .container-masterdata section .insert-csv .wrap{
+    position: absolute;
+    margin-top: -90px;
+    z-index: -1;
+    width: 100%;
+}
+
+.masterdata .container-masterdata section .insert-csv .wrap:has(p,i){
+    width: 100%;
+    text-align: center;
+    color: #6478D9;
+}
+
+.masterdata .container-masterdata section .insert-csv .wrap i{
+    font-size: 35px;
+    margin-top: 10px;
+}
+.wrap-garis{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+.wrap-garis p{
+    width: 100%;
+    z-index: 3;
+    font-family: poppins-bold;
+    background-color: white;
+    text-align: center;
+}
+
+.masterdata .container-masterdata section .insert-csv input{
+    height: 100px;
+    z-index: 10;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0;
+    background-color: red;
+}
+
+.masterdata .container-masterdata section:first-child .form-input{
+    width: 80%;
+    height: max-content;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.masterdata .container-masterdata section:first-child .form-input input:not(:last-child){
+    width: 95%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.masterdata .container-masterdata section:first-child .form-input input:last-child{
+    padding: 10px 0px;
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    margin-top: 10px;
+    background-color: #6478d91a;
+    color: #6478D9;
+}
+
+.masterdata .container-masterdata section:first-child .form-input input:not(:last-child):focus{
+    outline-color: #6478D9;
+}
+
+.masterdata .container-masterdata section:first-child .form-input label{
+    display: block;
+    font-size: 13px;
+    font-family: poppins-bold;
+}
+.kategori{
+    padding: 5px 0px;
+    padding-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 3px;
+}
+.masterdata .container-masterdata section:nth-child(2) .form-input{
+    width: 100%;
+    height: max-content;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.masterdata .container-masterdata section:nth-child(2) .form-input input:not(:last-child){
+    width: 95%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.masterdata .container-masterdata section:nth-child(2) .form-input input:last-child{
+    padding: 10px 0px;
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    margin-top: 10px;
+    background-color: #6478d91a;
+    color: #6478D9;
+}
+
+.masterdata .container-masterdata section:nth-child(2) .form-input input:not(:last-child):focus{
+    outline-color: #6478D9;
+}
+
+.masterdata .container-masterdata section:nth-child(2) .form-input label{
+    display: block;
+    font-size: 13px;
+    font-family: poppins-bold;
+}
+
+.masterdata .container-masterdata section:nth-child(2) .form-input img{
+    width: 100%;
+    border-radius: 10px;
+    height: max-content;
+    object-fit: contain;
+    margin-top: 10px;
+    display: none;
+    cursor: zoom-in;
+}
+
+.masterdata .container-masterdata section:nth-child(2) .wrap-edit{
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.masterdata .container-masterdata section:nth-child(2) .wrap-edit .cari{
+    margin: 20px 0 10px 0;
+}
+.masterdata .container-masterdata section:nth-child(2) .wrap-edit .cari i{
+    position: absolute;
+    z-index: 1;
+    margin: 16px 5px;
+}
+.masterdata .container-masterdata section:nth-child(2) .wrap-edit .cari input{
+    width: 90%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.masterdata .container-masterdata section:nth-child(2) .wrap-edit .tb-edit{
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    border: 2px dashed #8e9dec;
+    background-color: #6478d91a;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+.masterdata .container-masterdata section:nth-child(2) .wrap-edit .tb-edit table{
+    width: 90%;
+    margin-left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    gap: 0;
+}
+.masterdata .container-masterdata section:nth-child(2) .wrap-edit .tb-edit tr{
+    overflow: hidden;
+}
+.masterdata .container-masterdata section:nth-child(2) .wrap-edit .tb-edit tr th{
+    text-align: center;
+}
+.masterdata .container-masterdata section:nth-child(2) .wrap-edit .tb-edit tr td{
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px;
+}
+.masterdata .container-masterdata section:nth-child(2) .wrap-edit .tb-edit tr:not(:first-child):hover{
+    background-color: #6478D9;
+    border-radius: 7px;
+    color: white;
+}
+.masterdata .container-masterdata section:nth-child(2) .wrap-edit .tb-edit tr td:last-child p{
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.masterdata .container-masterdata section:nth-child(2) .wrap-edit .tb-edit tr:has(th,td){
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.masterdata .container-masterdata section:nth-child(2) .wrap-edit .tb-edit tr:has(th,td:last-child){
+    width: 100%;
+}
+
+.masterdata .container-masterdata section:nth-child(2) .wrap-edit .garis{
+    width: 100%;
+    height: 2px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.masterdata .container-masterdata section:nth-child(3) .wrap-delete{
+    width: 80%;
+    height: max-content;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.masterdata .container-masterdata section:nth-child(3) .wrap-delete .cari{
+    margin: 20px 0 10px 0;
+}
+.masterdata .container-masterdata section:nth-child(3) .wrap-delete .cari i{
+    position: absolute;
+    z-index: 1;
+    margin: 16px 5px;
+}
+.masterdata .container-masterdata section:nth-child(3) .wrap-delete .cari input{
+    width: 90%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.masterdata .container-masterdata section:nth-child(3) .wrap-delete table tr{
+    font-size: 13px;
+}
+
+.masterdata .container-masterdata section:nth-child(3) .wrap-delete table tr td:first-child{
+    width: 50px;
+}
+.masterdata .container-masterdata section:nth-child(3) .wrap-delete table tr td:last-child{
+    width: 100px;
+}
+
+.masterdata .container-masterdata section:nth-child(3) .wrap-delete table tr td{
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 5px;
+}
+.masterdata .container-masterdata section:nth-child(3) .wrap-delete table tr th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.masterdata .container-masterdata section:nth-child(3) .wrap-delete table{
+    background-color: rgba(255, 0, 0, 0);
+    table-layout: fixed;
+    width: 100%;
+}
+.masterdata .container-masterdata section:nth-child(3) .wrap-delete .tb-delete{
+    text-overflow: ellipsis;
+}
+
+.masterdata .container-masterdata section:nth-child(3) .wrap-delete .info-delete{
+    width: 100%;
+    height: max-content;
+    border-radius: 20px;
+    background-color: #6478d91a;
+    margin-bottom: 10px;
+    border: 2px dashed #6478D9;
+}
+
+.masterdata .container-masterdata section:nth-child(3) .wrap-delete .info-delete p{
+    color: #6478D9;
+    font-size: 13px;
+    padding: 10px 15px;
+
+}
+.masterdata .container-masterdata section:nth-child(3) .wrap-delete .info-delete i{
+    color: #6478D9;
+    margin-top: 10px;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+}

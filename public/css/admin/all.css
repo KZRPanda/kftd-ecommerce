@@ -1,0 +1,94 @@
+@import url(component/header.css);
+@import url(component/container/dashboard.css);
+@import url(component/detail.css);
+@import url(component/container/dataBarang.css);
+@import url(component/container/dataPesanan.css);
+@import url(component/container/dataPersetujuan.css);
+@import url(component/container/suratKeterangan.css);
+@import url(component/container/sampahSK.css);
+@import url(component/container/dataDibayar.css);
+@import url(component/container/dataPiutang.css);
+@import url(component/container/dataDisetujui.css);
+@import url(component/container/masterdata.css);
+@import url(component/container/akunuser.css);
+@import url(component/container/akunsetujui.css);
+*{
+    font-family: poppins-reg;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #f7f8fa;
+}
+
+.wrap-all{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "nav contain detail";
+    grid-template-columns: max-content auto 240px;
+}
+
+.wrap-all nav{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: max-content;
+}
+
+.tolak-pesanan{
+    height: max-content;
+    width: min-content;
+    padding: 20px;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.089);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+}
+.tolak-pesanan textarea{
+    padding: 8px;
+    margin-top: 15px;
+}
+
+.tolak-pesanan button{
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px 0;
+    border-radius: 7px;
+    border: none;
+}
+.tolak-pesanan .btn-tolak{
+    color: red;
+    background-color: #ff000037;
+}
+
+.tolak-pesanan section{
+    width: 100%;
+    height: min-content;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-gap: 5px;
+}
+.tolak-pesanan section .pilih{
+    width:max-content;
+    display: grid;
+    height: min-content;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin: 10px 0;
+    color: black;
+    padding: 10px;
+    grid-template-columns: max-content max-content;
+}
+.tolak-pesanan section .pilih i{
+    transform: translateY(3px);
+    padding-right: 10px;
+}

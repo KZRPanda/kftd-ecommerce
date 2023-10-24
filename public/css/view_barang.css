@@ -1,0 +1,243 @@
+@import url(font.css);
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins-reg;
+}
+.view-barang{
+    border-radius: 7px;
+    display: grid;
+    grid-template-columns: max-content auto;
+    grid-template-areas: 'kiri kanan';
+    height: max-content;
+    width: 50%;
+    padding-bottom: 20px;
+    opacity: 0;
+    margin:150px auto;
+    background-color: #ffffff;
+    animation: popout 1s ease;
+    -webkit-animation: popout 1s ease;
+}
+
+.view-barang .body-view .stok{
+    color: red;
+}
+
+.view-barang .gambar-barang{
+    height: 290px;
+    width: 290px;
+    background-color: transparent;
+}
+
+.view-barang .gambar-barang i{
+    font-size: 30px;
+    transform: translate(-50%,-50%);
+    margin: 50% 50%;
+}
+
+.view-barang .gambar-barang img{
+    display: none;
+    height: 200px;
+    width: 200px;
+    margin: 50% 50%;
+    border: 1px solid rgb(238, 238, 238);
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+}
+
+.view-barang .body-view .btn-view .btn-t-k{
+    background-color: transparent;
+    width: max-content;
+    display: grid;
+    border: 1px solid rgb(225, 225, 225);
+    height: 30px;
+    grid-template-areas: 'left mid right';
+    grid-template-columns: 30px 50px 30px;
+    grid-template-rows: 30px;
+}
+.view-barang .body-view .btn-view .btn-t-k button{
+    height: 30px;
+    border: 0px solid rgb(214, 214, 214);
+    cursor: pointer;
+    color: grey;
+}
+.view-barang .body-view .btn-view .btn-t-k .jum{
+    background-color:transparent;
+    height: 25px;
+    width: 50px;
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    padding: 0;
+}
+
+.view-barang .body-view{
+    margin-top: 0px;
+    height: max-content;
+    background-color: transparent;
+}
+
+.view-barang .body-view h3{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width: 95%;
+    height: max-content;
+}
+.view-barang .body-view h2{
+    margin-bottom: 20px;
+    color: red;
+}
+
+.view-barang .body-view .btn-pesan{
+    padding: 15px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #203390;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    margin-top: 40px;
+}
+.view-barang .body-view .btn-pesan i{
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.komentar{
+    background-color: white;
+    position: fixed;
+    width: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    transform: translateX(500px);
+    padding: 30px;
+    max-height: 80%;
+    border-radius: 7px;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.108);
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: max-content;
+    bottom: 0;
+}
+
+.komentar .data{
+    margin-bottom: 25px;
+}
+
+.komentar .data p{
+    font-size: 13px;
+}
+
+@keyframes popout {
+    from{transform:scale(0)}
+    80%{transform:scale(1.2)}
+    to{transform:scale(1)}
+}
+
+@media only screen and (max-width : 450px) {
+    .view-barang{
+        border-radius: 7px;
+        display: grid;
+        grid-template-columns: max-content auto;
+        grid-template-areas: 'kiri kanan';
+        height: max-content;
+        width: 95%;
+        padding-bottom: 20px;
+        opacity: 0;
+        margin:150px auto;
+        background-color: #ffffff;
+        animation: popout 1s ease;
+        -webkit-animation: popout 1s ease;
+    }
+    
+    .view-barang .body-view .stok{
+        color: red;
+    }
+    
+    .view-barang .gambar-barang{
+        height: 130px;
+        width: 130px;
+        background-color: transparent;
+    }
+    
+    .view-barang .gambar-barang i{
+        font-size: 30px;
+        transform: translate(-50%,-50%);
+        margin: 50% 50%;
+    }
+    
+    .view-barang .gambar-barang img{
+        display: none;
+        height: 100px;
+        width: 100px;
+        margin: 50% 50%;
+        border: 1px solid rgb(238, 238, 238);
+        transform: translate(-50%,-50%);
+        object-fit: cover;
+    }
+    
+    .view-barang .body-view .btn-view .btn-t-k{
+        background-color: transparent;
+        width: max-content;
+        display: grid;
+        border: 1px solid rgb(225, 225, 225);
+        height: 30px;
+        grid-template-areas: 'left mid right';
+        grid-template-columns: 30px 50px 30px;
+        grid-template-rows: 30px;
+    }
+    .view-barang .body-view .btn-view .btn-t-k button{
+        height: 30px;
+        border: 0px solid rgb(214, 214, 214);
+        cursor: pointer;
+        color: grey;
+    }
+    .view-barang .body-view .btn-view .btn-t-k .jum{
+        background-color:transparent;
+        height: 25px;
+        width: 50px;
+        margin: 0;
+        text-align: center;
+        font-size: 20px;
+        padding: 0;
+    }
+    
+    .view-barang .body-view{
+        margin-top: 0px;
+        height: max-content;
+        background-color: transparent;
+    }
+    
+    .view-barang .body-view h3{
+        margin-bottom: 10px;
+        margin-top: 20px;
+        width: 95%;
+        font-size: 15px;
+        height: max-content;
+    }
+    .view-barang .body-view h2{
+        margin-bottom: 20px;
+        color: red;
+        font-size: 20px;
+    }
+    
+    .view-barang .body-view .btn-pesan{
+        padding: 15px 20px;
+        font-size: 10px;
+        color: white;
+        background-color: #203390;
+        border-radius: 4px;
+        border: 2px solid transparent;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+    .view-barang .body-view .btn-pesan i{
+        margin-right: 10px;
+        font-size: 13px;
+    }
+}

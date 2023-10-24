@@ -1,0 +1,495 @@
+@import url("../font.css");
+@import url("../fontawesome/css/all.css");
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins-reg;
+}
+body{
+    background-color: #ffffff;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container .form input{
+    display: block;
+}
+.container{
+    padding: 30px;
+    height:max-content;
+    width: 80%;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-areas: 'kiri kanan';
+    grid-template-columns: 50% 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    border-radius: 36px;
+    box-shadow:  -31px 31px 62px #cecdd0ab,
+                 31px -31px 62px #ffffff;
+}
+
+.container img{
+    margin: auto;
+    width: 350px;
+    height: auto;
+}
+
+.container .form{
+    background-color: white;
+    border-radius: 7px;
+    height: max-content;
+    width: 400px;
+    border: 1px solid rgb(218, 221, 227);
+    margin-left: auto;
+    padding-bottom: 20px;
+    margin-right: auto;
+}
+
+.container .form h1{
+    margin: 20px 0 10px 30px ;
+    font-size: 30px;
+    color: #203390;
+    font-family: poppins-reg;
+}
+
+.container .form label{
+    font-size: 14px;
+    color: #203390;
+    margin-left: 30px;
+}
+
+.container .form input{
+    margin-bottom:20px;
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 10px 18px;
+    width: 75%;
+    margin-left: auto;
+    background-color: #ffffff;
+    margin-right: auto;
+    border: 1px solid rgb(190, 193, 201);
+    border-radius: 7px;
+}
+.container .form select{
+    margin-bottom:20px;
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 10px 18px;
+    width: 84%;
+    font-family: poppins-reg;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    margin-right: auto;
+    border: 1px solid rgb(190, 193, 201);
+    border-radius: 7px;
+}
+.container .wrap-form{
+    background-color: none;
+}
+.container .signup{
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    border: 1px solid rgb(218, 221, 227);
+    margin-top: 20px;
+    border-radius: 7px;
+    padding: 15px 0px 15px 0px;
+}
+
+
+.container .form input::placeholder{
+    color: #7b7d84;
+}
+
+.container .form .lihat{
+    color: white;
+    background-color: #203390;
+    height: 48px;
+    width: 48px;
+    font-size: 20px;
+    border-radius: 7px;
+    position: absolute;
+    transform: translate(330px,-66px);
+    z-index: 1;
+}
+
+.container .form .lihat i{
+    margin:50% 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container .form button{
+    width: 83%;
+    height: 50px;
+    margin-left: 50%;
+    margin-top: 10px;
+    transform: translateX(-50%);
+    padding: 15px 18px;
+    border: none;
+    border-radius: 7px;
+    font-family: poppins-bold;
+    font-size: 15px;
+}
+
+.container .form .login{
+    color: white;
+    background-color: #203390;
+}
+
+.container .form .register{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    margin-bottom: 10px;
+}
+
+.container .form .lupa{
+    margin-left: 23px; 
+    color: red;
+}
+
+.ingat{
+    width:100%;
+    background-color: red;
+    height: max-content;
+}
+
+#check{
+    cursor: pointer;  
+    width: 35px !important;  
+    height: 35px !important;  
+    z-index: 2;  
+    appearance: none;  
+    -webkit-appearance: none; 
+    border-radius: 5px;
+    background-color: grey;
+    margin-left: 0;
+    display: inline-block;
+    margin-right: 0;
+}
+
+.ingat label{
+    display: inline-block;
+    width: max-content;
+}
+
+#check:checked{
+    background-color: #6478D9;
+}
+
+#check::after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    z-index: 2;
+    transform: translate(-10px,-4px);
+}
+
+
+.container .form .footer{
+    width: 50%;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.459);
+    text-align: center;
+    margin: 80px auto;
+}
+
+.danger{
+    height: max-content;
+    width: max-content;
+    position: absolute;
+    padding: 15px;
+    background-color: rgb(239, 239, 242);
+    font-size: 13px;
+    color: red;
+    margin-left: 37px;
+    font-family: poppins-bold;
+    z-index: 10;
+}
+
+@media only screen and (max-width : 450px){
+    .container .form input{
+        display: block;
+    }
+    .container{
+        padding: 20px;
+        height:max-content;
+        width: 80%;
+        background-color: #ffffff;
+        display: block;
+        margin: 0;
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        border-radius: 20px;
+        box-shadow:  -31px 31px 62px #cecdd0ab,
+                     31px -31px 62px #ffffff;
+    }
+    
+    .container img{
+        margin: auto;
+        width: 50%;
+        height: auto;
+    }
+    
+    .container .form{
+        background-color: rgb(255, 255, 255);
+        border-radius: 7px;
+        height: max-content;
+        width: 100%;
+        border: 1px solid rgb(218, 221, 227);
+        margin-left: auto;
+        padding-bottom: 20px;
+        margin-right: auto;
+    }
+    
+    .container .form h1{
+        margin: 20px 0 10px 0px ;
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+        color: #203390;
+        font-family: poppins-bold;
+    }
+    
+    .container .form label{
+        font-size: 13px;
+        color: #203390;
+        margin-left: 30px;
+    }
+    
+    .container .form input{
+        margin-bottom:20px;
+        margin-top: 10px;
+        font-size: 12px;
+        padding: 9px 13px;
+        width: 75%;
+        margin-left: auto;
+        background-color: #ffffff;
+        margin-right: auto;
+        border: 1px solid rgb(190, 193, 201);
+        border-radius: 7px;
+    }
+    .container .wrap-form{
+        background-color: none;
+    }
+    .container .signup{
+        text-align: center;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        border: 1px solid rgb(218, 221, 227);
+        margin-top: 20px;
+        font-size: 13px;
+        border-radius: 7px;
+        padding: 15px 0px 15px 0px;
+    }
+    
+    
+    .container .form input::placeholder{
+        color: #7b7d84;
+    }
+    
+    .container .form .lihat{
+        color: white;
+        background-color: #203390;
+        height: 45px;
+        width: 45px;
+        font-size: 20px;
+        border-radius: 7px;
+        right: 0;
+        position: absolute;
+        transform: translate(-30px,-63px);
+        z-index: 1;
+    }
+    
+    .container .form .lihat i{
+        margin:50% 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .container .form button{
+        width: 83%;
+        height: 50px;
+        margin-left: 50%;
+        margin-top: 10px;
+        transform: translateX(-50%);
+        padding: 15px 18px;
+        border: none;
+        border-radius: 7px;
+        font-family: poppins-bold;
+        font-size: 15px;
+    }
+    
+    .container .form .login{
+        color: white;
+        background-color: #203390;
+    }
+    
+    .container .form .register{
+        background-color: rgb(255, 255, 255);
+        color: black;
+        margin-bottom: 10px;
+    }
+    
+    .container .form .lupa{
+        margin-left: 23px; 
+        color: red;
+    }
+    
+    .ingat{
+        width:100%;
+        background-color: red;
+        height: max-content;
+    }
+    
+    #check{
+        cursor: pointer;  
+        width: 35px !important;  
+        height: 35px !important;  
+        z-index: 2;  
+        appearance: none;  
+        -webkit-appearance: none; 
+        border-radius: 5px;
+        background-color: grey;
+        margin-left: 0;
+        display: inline-block;
+        margin-right: 0;
+    }
+    
+    .ingat label{
+        display: inline-block;
+        width: max-content;
+    }
+    
+    #check:checked{
+        background-color: #6478D9;
+    }
+    
+    #check::after{
+        font-family: "Font Awesome 5 Free";
+        content: "\f00c";
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        z-index: 2;
+        transform: translate(-10px,-4px);
+    }
+    
+    
+    .container .form .footer{
+        width: 50%;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.459);
+        text-align: center;
+        margin: 80px auto;
+    }
+}
+
+@media only screen and (min-width : 1500px) {
+    .container{
+        padding: 50px;
+        height:max-content;
+        width: 80%;
+        background-color: #f2f1f5;
+        display: grid;
+        grid-template-areas: 'kiri kanan';
+        grid-template-columns: auto 700px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        border-radius: 36px;
+        box-shadow:  -31px 31px 62px #cecdd0ab,
+                     31px -31px 62px #ffffff;
+    }
+
+    .container img{
+        margin: auto;
+    }
+
+    .container .form{
+        background-color: white;
+        border-radius: 26px;
+        height: 800px;
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container .form h1{
+        margin: 50px 0 30px 45px ;
+        font-size: 40px;
+        color: #203390;
+        font-family: poppins-bold;
+    }
+
+    .container .form label{
+        font-size: 18px;
+        font-weight:bold;
+        color: #203390;
+        margin-left: 43px;
+    }
+
+    .container .form input{
+        margin-bottom: 30px;
+        margin-top: 20px;
+        font-size: 17px;
+        padding: 15px 18px;
+        width: 80%;
+        margin-left: auto;
+        background-color: #F2F4F8;
+        margin-right: auto;
+        border: none;
+        border-radius: 7px;
+    }
+
+    .container .form input::placeholder{
+        color: #CDCFD9;
+    }
+
+    .container .form .lihat{
+        color: white;
+        background-color: #203390;
+        height: 60px;
+        width: 60px;
+        font-size: 20px;
+        border-radius: 7px;
+        position: absolute;
+        transform: translate(500px,-89px);
+        z-index: 1;
+    }
+
+    .container .form .lihat i{
+        margin:50% 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .container .form button{
+        width: 83%;
+        height: 60px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 20px;
+        padding: 15px 18px;
+        border: none;
+        color: white;
+        background-color: #203390;
+        border-radius: 50px;
+        font-size: 20px;
+    }
+
+}

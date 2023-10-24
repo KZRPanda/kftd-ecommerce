@@ -1,0 +1,263 @@
+.to-top{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: #6478d93f;
+    color: #203390;
+    position: fixed;
+    transition: 0.2s linear;
+    margin-right: -50px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    right: 0;
+}
+.to-top i{
+    margin: 50% 50%;
+    transform: translate(-50%,-50%);
+}
+.semua .card{
+    width: 90%;
+    height: max-content;
+    padding: 30px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-areas: 'head'
+     'body' 
+     'footer';
+    border-radius: 10px;
+    transition: 0.2s linear;
+    background-color: white;
+    border: 2px solid white;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content auto max-content;
+}
+.semua .card:hover{
+    border-color: #203390;
+}
+.semua .card .header-pesanan{
+    background-color: transparent;
+    width: 100%;
+    height: min-content;
+}
+
+.semua .card .body-pesanan{
+    background-color: transparent;
+    display: grid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-template-areas: 'gambar detail';
+    grid-template-columns: max-content auto;
+}
+
+.semua .card .body-pesanan .gambar-pesanan{
+    width: 120px;
+    height: 120px;
+}
+.semua .card .body-pesanan .gambar-pesanan img{
+    width: 80%;
+    object-fit: cover;
+    height: 80%;
+    margin: 50% 50%;
+    border: 1px solid rgb(197, 197, 197);
+    transform: translate(-50%,-50%);
+}
+.semua .card .body-pesanan .detail-pesanan .detail1{
+    width: max-content;
+    height: max-content;
+    margin-top: 0px;
+}
+.semua .card .body-pesanan .detail-pesanan .detail1 .nama-obat{
+    font-size: 19px;
+    font-weight: 600;
+}
+.semua .card .body-pesanan .detail-pesanan{
+    grid-template-areas: 'kiri kanan';
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: auto max-content;
+}
+.semua .card .footer-pesanan{
+    padding-top: 20px;
+    border-top: 1px solid rgb(216, 216, 216);
+    display: grid;
+    grid-template-areas: 'kiri kanan';
+    grid-template-columns: auto max-content;
+}
+
+.semua .card .footer-pesanan h3{
+    text-align: right;
+    color: red;
+}
+
+.semua .card .wrap-ket{
+    margin-top: 15px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #ff000037;
+    color: red;
+    height: max-content;
+}
+
+.semua .card .wrap-ket p{
+    width: 100%;
+    height: max-content;
+    padding: 20px;
+}
+
+.semua .card button{
+    background-color: #203390;
+    border-radius: 5px;
+    width: 300px;
+    color: white;
+    height: 40px;
+    margin-top: 20px;
+    float: right;
+    border: none;
+}
+
+@media only screen and (max-width:450px){
+    .semua .card{
+        width: 80%;
+        height: max-content;
+        padding: 20px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-areas: 'head'
+         'body' 
+         'footer';
+        border-radius: 10px;
+        transition: 0.2s linear;
+        background-color: white;
+        border: 2px solid white;
+        grid-template-columns: 100%;
+        grid-template-rows: max-content auto max-content;
+    }
+    .semua .card:hover{
+        border-color: #203390;
+    }
+    .semua .card .header-pesanan{
+        background-color: transparent;
+        width: 100%;
+        margin-bottom: 20px;
+        height: min-content;
+    }
+    
+    .semua .card .body-pesanan{
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        width: 100%;
+        padding-top: 5px;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        grid-template-areas: 'gambar detail';
+        grid-template-columns: max-content auto;
+    }
+    
+    .semua .card .body-pesanan .gambar-pesanan{
+        width: 70px;
+        height: 70px;
+    }
+    .semua .card .body-pesanan .gambar-pesanan img{
+        width: 80%;
+        object-fit: cover;
+        height: 80%;
+        margin: 50% 50%;
+        border: 1px solid rgb(197, 197, 197);
+        transform: translate(-50%,-50%);
+    }
+    .semua .card .body-pesanan .detail-pesanan .detail1{
+        width: max-content;
+        height: max-content;
+        margin-top: 0px;
+    }
+    .semua .card .body-pesanan .detail-pesanan .detail1 .nama-obat{
+        font-size: 12px;
+        font-weight: 600;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+        text-overflow: ellipsis;
+        max-width: 200px;
+    }
+    .semua .card .body-pesanan .detail-pesanan .detail1 .jumlah-obat{
+        font-size: 13px;
+    }
+    .semua .card .body-pesanan .detail-pesanan{
+        grid-template-areas: 'kiri kanan';
+        margin-top: 10px;
+        margin-bottom: 20px;
+        display: block;
+        width: 100%;
+    }
+    .semua .card .footer-pesanan{
+        padding-top: 20px;
+        border-top: 1px solid rgb(216, 216, 216);
+        display: grid;
+        grid-template-areas: 'kiri kanan';
+        grid-template-columns: auto max-content;
+    }
+    .semua .card .footer-pesanan p{
+        font-size: 14px;
+    }
+    .semua .card .footer-pesanan h3{
+        text-align: right;
+        font-size: 14px;
+        color: red;
+    }
+    
+    .semua .card .wrap-ket{
+        margin-top: 15px;
+        border-radius: 10px;
+        width: 85%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        font-size: 12px;
+        background-color: #ff000037;
+        color: red;
+        padding: 20px;
+        height: max-content;
+    }
+    
+    .semua .card .wrap-ket p{
+        width: 100%;
+        height: max-content;
+        padding: 0px;
+    }
+    
+    .semua .card button{
+        background-color: #203390;
+        border-radius: 5px;
+        width: 100%;
+        color: white;
+        height: 40px;
+        margin-top: 20px;
+        float: right;
+        border: none;
+    }
+
+    .to-top{
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        background-color: #dfe4ff;
+        color: #203390;
+        position: fixed;
+        bottom: 0;
+        margin-bottom: 30px;
+        transition: 0.5s linear;
+        margin-right: -60px;
+        transform: rotate(90deg);
+        cursor: pointer;
+        z-index: 2;
+        right: 0;
+    }
+    .to-top i{
+        margin: 50% 50%;
+        transform: translate(-50%,-50%);
+    }
+}

@@ -1,0 +1,384 @@
+@import url(../font.css);
+.checkout{
+    width: 100%;
+    height: 78vh;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background-color: transparent;
+    grid-template-rows: auto max-content;
+}
+
+.checkout .body-checkout{
+    height: 100%;
+    width: 95%;
+    overflow-x: hidden;
+    padding-bottom: 0px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    overflow-y: scroll;
+    background-color: rgba(255, 0, 0, 0);
+}
+.checkout .body-checkout .card-checkout{
+    width: 90%;
+    border-bottom: 1px solid #f2f2f2;
+    margin-left: 50%;
+    height: 70px;
+    transform: translateX(-50%);
+    height: max-content;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: max-content 200px 200px 200px auto;
+    grid-template-areas: "img text jum as";
+    padding: 0px 10px;
+    padding-bottom: 20px;
+}
+
+.checkout .body-checkout .card-checkout:last-child{
+    border: none;
+}
+
+.checkout .body-checkout .card-checkout input{
+    height: 20px;
+    width: 20px;
+    padding: 10px;
+    margin: 50% 50%;
+    transform: translate(-50%,-50%);
+}
+
+.checkout .body-checkout .card-checkout .gambar-checkout{
+    height: 90px;
+    object-fit: cover;
+    width: 90px;
+    margin-top: 5px;
+    padding: 0px 5px 0px 0px;
+}
+.checkout .body-checkout .card-checkout .gambar-checkout img{
+    border-radius: 10px;
+    object-fit: cover;
+}
+.checkout .body-checkout .card-checkout .nama-checkout{
+    height: 100px;
+    font-size: 13px;
+}
+
+.checkout .body-checkout .card-checkout .harga{
+    height: max-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 0;
+    bottom: 0;
+}
+.checkout .body-checkout .card-checkout .btn-t-k{
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 0;
+    bottom: 0;
+}
+.checkout .body-checkout .card-checkout .batal .btn-hapus-checkout{
+    margin:33px 50%;
+    transform: translateX(-50%);
+    width: max-content;
+}
+.checkout .body-checkout .card-checkout .batal{
+    height: max-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+}
+.checkout .body-checkout .card-checkout .batal .btn-batal{
+    padding: 0px;
+}
+.checkout .body-checkout .card-checkout .batal i{
+    font-size: 20px;
+    color: #9c9b9b;
+}
+.checkout .body-checkout .card-checkout .harga p{
+    font-size: 16px;
+    font-family: poppins-reg;
+    color: red;
+}
+
+.checkout .body-checkout .card-checkout .nama-checkout p:first-child{
+    margin-top: 0px;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: poppins-bold;
+}
+
+.checkout .body-checkout .card-checkout .gambar-checkout img{
+    height: 100%;
+    width: 100%;
+}
+
+.summary{
+    border-radius: 0px;
+    height: max-content;
+    margin-top: 20px;
+    margin-bottom: auto;
+    top: 0;
+    bottom: 0;
+    border: none;
+    width: 70%;
+    background-color: #203390;
+}
+.summary *{
+    color: white;
+}
+.summary h3{
+    margin: 20px;
+    text-align: center;
+    font-family: metropolis;
+    font-size: 23px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.509);
+}
+.summary .body-summary{
+    width: 85%;
+    height: max-content;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.summary .body-summary section{
+    margin-bottom: 15px;
+}
+.summary .body-summary section h5{
+    margin-bottom: 3px;
+    font-size: 16px;
+}
+.summary .body-summary section input{
+    padding: 7px 10px;
+    color: #203390;
+}
+.summary button{
+    color: #ffffff;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: #8595f2;
+    font-family: poppins-bold;
+}
+@keyframes popout {
+    from{transform:scale(0)}
+    80%{transform:scale(1.1)}
+    to{transform:scale(1)}
+}
+
+@media only screen and (max-width : 450px) {
+    body{
+        height: max-content;
+    }
+    .checkout{
+        width: 100%;
+        height: max-content;
+        max-height: 1000px;
+        display: grid;
+        grid-template-areas:"bawah" "atas";
+        grid-template-columns: auto;
+        grid-template-rows: 60% 40%;
+    }
+    
+    .checkout .body-checkout{
+        height: 100%;
+        width: 95%;
+        grid-area: "bawah";
+        overflow-x: hidden;
+        padding-bottom: 0px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        overflow-y: scroll;
+        background-color: rgba(68, 93, 219, 0);
+    }
+    .checkout .body-checkout .card-checkout{
+        width: 95%;
+        border-bottom: 1px solid #f2f2f2;
+        margin-left: 50%;
+        height: 70px;
+        transform: translateX(-50%);
+        height: max-content;
+        margin-bottom: 30px;
+        display: block;
+        margin-top: 20px;
+        grid-template-columns: repeat(5,auto);
+        padding: 0px 10px;
+        padding-bottom: 30px;
+        background-color: rgba(0, 0, 255, 0);
+    }
+    
+    .checkout .body-checkout .card-checkout:last-child{
+        border: none;
+    }
+    
+    .checkout .body-checkout .card-checkout input{
+        height: 20px;
+        width: 20px;
+        padding: 10px;
+        margin: 50% 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .checkout .body-checkout .card-checkout .gambar-checkout{
+        height: 90px;
+        object-fit: cover;
+        width: 90px;
+        margin-top: 10px;
+        padding: 0px 5px 0px 0px;
+        display: inline-flex;
+    }
+    .checkout .body-checkout .card-checkout .gambar-checkout img{
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .checkout .body-checkout .card-checkout .nama-checkout{
+        height: max-content;
+        padding: 10px;
+        width: 60%;
+        transform: translateY(-40px);
+        display: inline-block;
+        padding-bottom: 5px;
+        font-size: 13px;
+    }
+    
+    .checkout .body-checkout .card-checkout .harga{
+        height: max-content;
+
+    }
+    .checkout .body-checkout .card-checkout .wrap-temp{
+        height: 100%;
+    }
+    .checkout .body-checkout .card-checkout .btn-t-k{
+        margin: 0;
+        transform: translateX(0px);
+        float: right;
+    }
+    .btn-t-k{
+        background-color: transparent;
+        width: max-content;
+        display: grid;
+        border: 1px solid rgb(225, 225, 225);
+        height: 35px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        grid-template-areas: 'left mid right';
+        grid-template-columns: 35px 50px 35px;
+        grid-template-rows: 35px;
+    }
+    .btn-t-k button{
+        height: 35px;
+        border: 0px solid rgb(214, 214, 214);
+        cursor: pointer;
+        color: grey;
+    }
+    .btn-t-k .jum{
+        background-color:transparent;
+        height:35px;
+        width: 50px;
+        margin: 0;
+        margin-top: 5px; 
+        text-align: center;
+        font-size: 16px;
+        padding: 0;
+    }
+    .checkout .body-checkout .card-checkout .batal .btn-hapus-checkout{
+        margin:33px 50%;
+        transform: translateX(-50%);
+        width: max-content;
+    }
+    .checkout .body-checkout .card-checkout .batal{
+        height: max-content;
+        margin-top: auto;
+        margin-bottom: auto;
+        top: 0;
+        bottom: 0;
+        background-color: transparent;
+    }
+    .checkout .body-checkout .card-checkout .batal .btn-batal{
+        padding: 0px;
+        display: none;
+    }
+    .checkout .body-checkout .card-checkout .batal i{
+        font-size: 20px;
+        display: none;
+        color: #9c9b9b;
+    }
+    .checkout .body-checkout .card-checkout .harga-barang{
+        font-size: 20px;
+        font-family: poppins-bold;
+        color: red;
+    }
+    
+    .checkout .body-checkout .card-checkout .nama-checkout p:first-child{
+        margin-top: 0px;
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-family: poppins-bold;
+    }
+    
+    .checkout .body-checkout .card-checkout .gambar-checkout img{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .summary{
+        grid-area: "atas";
+        border-radius: 0px;
+        min-height: 400px;
+        height: 100%;
+        margin-bottom: auto;
+        top: 0;
+        bottom: 0;
+        border: none;
+        width: 100%;
+        background-color: #203390;
+    }
+    .summary *{
+        color: white;
+    }
+    .summary h3{
+        margin: 20px;
+        text-align: center;
+        font-family: metropolis;
+        font-size: 25px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.509);
+    }
+    .summary .body-summary{
+        width: 85%;
+        height: 70%;
+        margin-left: 50%;
+        background-color: rgba(172, 255, 47, 0);
+        transform: translateX(-50%);
+    }
+    .summary .body-summary section{
+        margin-bottom: 15px;
+    }
+    .summary .body-summary section h5{
+        margin-bottom: 3px;
+        font-size: 20px;
+    }
+    .summary .body-summary section input{
+        padding: 7px 10px;
+        width: 95%;
+        padding-right: 0;
+        color: #203390;
+    }
+    .summary .body-summary p{
+        font-size: 20px;
+    }
+    .summary button{
+        color: #ffffff;
+        width: 100%;
+        height: 50px;
+        border: none;
+        bottom: 0;
+        margin: auto;
+        background-color: #8595f2;
+        font-family: poppins-bold;
+    }
+}

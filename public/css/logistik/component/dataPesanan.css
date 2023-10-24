@@ -1,0 +1,32 @@
+.dataPesanan{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,24.1%);
+    width: 100%;
+    margin-top: 15px;
+    height: 90%;
+    overflow-y: scroll;
+    grid-gap: 10px;
+    grid-template-rows: repeat(100%);
+}
+.dataPesanan .row {
+    width: 100%;
+}
+.dataPesanan .row .col{
+    width: 100%;
+}
+.dataPesanan .row .col .card{
+    width: 100%;
+    height: max-content;
+    border-radius: 6px;
+    padding: 0px;
+    background-color: rgb(232, 232, 232);
+    display: block;
+    margin-bottom: 20px;
+}
+.dataPesanan .row .col .card .wrap-card{
+    width: 90%;
+    height: max-content;
+    padding: 10px 0px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
